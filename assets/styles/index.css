@@ -1,1 +1,45 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: "MonteCarlo";
+  src: url(../fonts/MonteCarlo-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: #AD6C6C;
+  font-family: "MonteCarlo", cursive;
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: white;
+}
+
+nav h2 {
+  color: #AD6C6C;
+  font-family: "MonteCarlo", cursive;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.accueil {
+  height: 100vh;
+  background-color: #fcf8fc;
+}
+/*# sourceMappingURL=index.css.map */
