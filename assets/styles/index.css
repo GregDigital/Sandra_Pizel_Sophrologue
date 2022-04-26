@@ -31,6 +31,10 @@ body {
   background: white;
 }
 
+header {
+  height: 30vh;
+}
+
 nav h2 {
   color: #AD6C6C;
   font-family: "MonteCarlo", cursive;
@@ -38,7 +42,32 @@ nav h2 {
   font-weight: 100;
 }
 
-.accueil {
+.homepage {
+  height: 70vh;
+  background-color: #fcf8fc;
+}
+
+.whoAmI {
+  height: 100vh;
+  background-color: #fcf8fc;
+}
+
+.together {
+  height: 100vh;
+  background-color: #fcf8fc;
+}
+
+.price {
+  height: 100vh;
+  background-color: #fcf8fc;
+}
+
+.workshop {
+  height: 100vh;
+  background-color: #fcf8fc;
+}
+
+.contact {
   height: 100vh;
   background-color: #fcf8fc;
 }
