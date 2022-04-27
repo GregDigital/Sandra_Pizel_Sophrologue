@@ -1,45 +1,40 @@
-
 @font-face {
-    font-family: "MonteCarlo";
-    src: url(../fonts/MonteCarlo-Regular.ttf);
+  font-family: "MonteCarlo";
+  src: url(../fonts/MonteCarlo-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf);
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
-
-$font1: 'MonteCarlo', cursive;
+$font1: "MonteCarlo", cursive;
 $font2: Roboto, sans-serif;
 $white: rgb(255, 255, 255);
 $black: #21201e;
-$grey: rgb(182,182,182);
-$titlecolor: #AD6C6C;
-$pinklight: #FDEAE8;
+$grey: rgb(182, 182, 182);
+$titlecolor: #ad6c6c;
+$pinklight: #fdeae8;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li {list-style: none;}
-
-h1{
-    color: $titlecolor;
-    font-family: $font1;
-    font-size: 4rem;
-    font-weight: 100;
+li {
+  list-style: none;
 }
 
-
-
-
-
-body{
-
-    font-family: $font2;
-    background: $white;
+h1 {
+  color: $titlecolor;
+  font-family: $font1;
+  font-size: 4rem;
+  font-weight: 100;
 }
 
+body {
+  overflow-x: hidden;
+  font-family: $font2;
+  background: $white;
+}

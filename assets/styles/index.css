@@ -20,13 +20,14 @@ li {
 }
 
 h1 {
-  color: #AD6C6C;
+  color: #ad6c6c;
   font-family: "MonteCarlo", cursive;
   font-size: 4rem;
   font-weight: 100;
 }
 
 body {
+  overflow-x: hidden;
   font-family: Roboto, sans-serif;
   background: white;
 }
@@ -59,7 +60,7 @@ nav {
 }
 
 nav h2 {
-  color: #AD6C6C;
+  color: #ad6c6c;
   font-family: "MonteCarlo", cursive;
   font-size: 3rem;
   font-weight: 100;
@@ -78,18 +79,18 @@ nav h2 {
 #burger-menu span,
 #burger-menu span:before,
 #burger-menu span:after {
-  background: #AD6C6C;
+  background: #ad6c6c;
   display: block;
   height: 2px;
   opacity: 1;
   position: absolute;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 #burger-menu span:before,
 #burger-menu span:after {
-  content: '';
+  content: "";
 }
 
 #burger-menu span:before {
@@ -144,15 +145,24 @@ nav h2 {
   opacity: 0;
   text-align: center;
   padding-top: 20px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border-radius: 70% 0% 0% 0%;
+  -webkit-box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+          box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
 }
 
 #menu.overlay {
   visibility: visible;
   opacity: 1;
   padding-top: 100px;
-  background: #FDEAE8;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  background: #fdeae8;
+  -webkit-box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+          box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
 }
 
 #menu ul {
@@ -161,12 +171,14 @@ nav h2 {
 
 #menu li {
   list-style: none;
+  display: block;
 }
 
 #menu a {
-  color: #fff;
+  font-family: "MonteCarlo", cursive;
+  color: #ad6c6c;
+  font-size: 3rem;
   display: block;
-  font-size: 32px;
   margin-bottom: 30px;
   text-decoration: none;
 }
