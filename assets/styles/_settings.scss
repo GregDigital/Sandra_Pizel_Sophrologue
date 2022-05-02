@@ -33,6 +33,10 @@ h1 {
   font-weight: 100;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: $font2;

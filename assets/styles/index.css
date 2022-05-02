@@ -26,6 +26,10 @@ h1 {
   font-weight: 100;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: Roboto, sans-serif;
@@ -265,9 +269,8 @@ nav h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .container_intro {
@@ -277,6 +280,10 @@ nav h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -288,12 +295,53 @@ nav h2 {
 
 .container_intro .container_intro_text {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
 }
 
 .container_intro .container_intro_text p {
+  position: relative;
   line-height: 2em;
   text-align: justify;
-  width: 50%;
+  width: 85%;
+}
+
+.container_intro p:after {
+  content: "";
+  width: 15%;
+  height: 5px;
+  position: absolute;
+  background: #ad6c6c;
+  left: 0;
+  bottom: -35px;
+}
+
+.container_intro .btn_accueil {
+  border: solid 5px #fdeae8;
+  padding: 1rem;
+  border-radius: 3rem;
+  background: #fdeae8;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #fdeae8));
+  background: linear-gradient(to right, white 50%, #fdeae8 50%);
+  font-family: "MonteCarlo", cursive;
+  font-size: 2rem;
+  color: #ad6c6c;
+  width: 20rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.container_intro .btn_accueil:hover {
+  background: -webkit-gradient(linear, left top, right top, to(#fdeae8));
+  background: linear-gradient(to right, #fdeae8 100%);
 }
 
 .whoAmI {

@@ -10,22 +10,62 @@
   grid-template-columns: 25% 25% 25%;
   align-content: center;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .container_intro {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   align-content: normal;
   margin-left: auto;
   margin-right: auto;
   .container_intro_text {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
     p {
+      position: relative;
       line-height: 2em;
       text-align: justify;
-      width: 50%;
+      width: 85%;
     }
+    
   }
+  p:after{
+    content : "";
+    width: 15%;
+    height: 5px;
+    position: absolute;
+    background:$titlecolor;
+    left: 0;
+    bottom: -35px;
+    
+    
+    }
+
+    .btn_accueil {
+      border: solid 5px $pinklight;
+      padding: 1rem;
+      border-radius: 3rem;
+      background: $pinklight ;
+      background: linear-gradient(to right, white 50%, $pinklight 50%);
+      font-family: $font1;
+      font-size: 2rem;
+      color: $titlecolor;
+      width: 20rem;
+      margin-top: 5rem;
+      cursor: pointer;
+      transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      &:hover{
+        background: linear-gradient(to right,  $pinklight 100%);
+      }
+   
+    }
+   
+   
+  
 }
