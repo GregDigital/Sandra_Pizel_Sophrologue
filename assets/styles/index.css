@@ -29,7 +29,6 @@ h1 {
 body {
   overflow-x: hidden;
   font-family: Roboto, sans-serif;
-  background: white;
 }
 
 header {
@@ -41,6 +40,12 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 16;
+  height: 160px;
 }
 
 header img {
@@ -57,6 +62,7 @@ nav {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  width: 15%;
 }
 
 nav h2 {
@@ -240,32 +246,73 @@ nav h2 {
 }
 
 .homepage {
-  height: 70vh;
-  background-color: #fcf8fc;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  height: 100vh;
+}
+
+.container_img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25%;
+      grid-template-columns: 25% 25% 25%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container_intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: normal;
+      align-content: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_intro .container_intro_text {
+  width: 80%;
+}
+
+.container_intro .container_intro_text p {
+  line-height: 2em;
+  text-align: justify;
+  width: 50%;
 }
 
 .whoAmI {
   height: 100vh;
-  background-color: #fcf8fc;
 }
 
 .together {
   height: 100vh;
-  background-color: #fcf8fc;
 }
 
 .price {
   height: 100vh;
-  background-color: #fcf8fc;
 }
 
 .workshop {
   height: 100vh;
-  background-color: #fcf8fc;
 }
 
 .contact {
   height: 100vh;
-  background-color: #fcf8fc;
 }
 /*# sourceMappingURL=index.css.map */

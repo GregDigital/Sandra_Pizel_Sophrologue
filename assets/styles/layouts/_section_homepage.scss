@@ -1,4 +1,31 @@
 .homepage {
-    height: 70vh;
-    background-color: rgb(252, 248, 252);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: stretch;
+  height: 100vh;
+}
+
+.container_img {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container_intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+  margin-left: auto;
+  margin-right: auto;
+  .container_intro_text {
+    width: 80%;
+    p {
+      line-height: 2em;
+      text-align: justify;
+      width: 50%;
+    }
+  }
 }
