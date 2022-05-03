@@ -29,43 +29,37 @@
 
     p {
       position: relative;
+      font-size: 1em;
       line-height: 2em;
       text-align: justify;
       width: 85%;
     }
-    
   }
-  p:after{
-    content : "";
+  p:after {
+    content: "";
     width: 15%;
     height: 5px;
     position: absolute;
-    background:$titlecolor;
+    background: $titlecolor;
     left: 0;
     bottom: -35px;
-    
-    
-    }
+  }
 
-    .btn_accueil {
-      border: solid 5px $pinklight;
-      padding: 1rem;
-      border-radius: 3rem;
-      background: $pinklight ;
-      background: linear-gradient(to right, white 50%, $pinklight 50%);
-      font-family: $font1;
-      font-size: 2rem;
-      color: $titlecolor;
-      width: 20rem;
-      margin-top: 5rem;
-      cursor: pointer;
-      transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      &:hover{
-        background: linear-gradient(to right,  $pinklight 100%);
-      }
-   
+  .btn_accueil {
+    border: solid 5px $pinklight;
+    padding: 1rem;
+    border-radius: 3rem;
+    background: $pinklight;
+    background: linear-gradient(to right, white 50%, $pinklight 50%);
+    font-family: $font1;
+    font-size: 2rem;
+    color: $titlecolor;
+    width: 20rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    &:hover {
+      background: linear-gradient(to right, $pinklight 100%);
     }
-   
-   
-  
+  }
 }
