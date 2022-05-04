@@ -2,17 +2,37 @@
   height: 100vh;
 
   .whoContainer {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 90vh;
+   display: flex;
+    height: 80vh;
     position: relative;
     align-content: center;
     align-items: center;
+    div{
+      max-width: 40%;
+      h2{
+      
+        font-family: $font1;
+        color: $titlecolor;
+        font-size: 3rem;
+        font-weight: 100;
+        padding: 2.2rem 0 1rem 1.2rem;
+      }
+      p {font-size: 1.1em;
+        line-height: 2em;
+        text-align: justify;
+        padding: 2.2rem 0 1rem 1.2rem;
+      }
+    }
+  
+   
     img {
       object-fit: cover;
       max-width: 50%;
+      max-height: 100vh;
       position: absolute;
       right: 0;
+    
+     
     }
   }
 }

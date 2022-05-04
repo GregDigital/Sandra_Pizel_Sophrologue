@@ -350,11 +350,10 @@ nav h2 {
 }
 
 .whoAmI .whoContainer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
   position: relative;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -363,10 +362,30 @@ nav h2 {
           align-items: center;
 }
 
+.whoAmI .whoContainer div {
+  max-width: 40%;
+}
+
+.whoAmI .whoContainer div h2 {
+  font-family: "MonteCarlo", cursive;
+  color: #ad6c6c;
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 2.2rem 0 1rem 1.2rem;
+}
+
+.whoAmI .whoContainer div p {
+  font-size: 1.1em;
+  line-height: 2em;
+  text-align: justify;
+  padding: 2.2rem 0 1rem 1.2rem;
+}
+
 .whoAmI .whoContainer img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 50%;
+  max-height: 100vh;
   position: absolute;
   right: 0;
 }
