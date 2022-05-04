@@ -1,3 +1,18 @@
 .whoAmI {
   height: 100vh;
+
+  .whoContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 90vh;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    img {
+      object-fit: cover;
+      max-width: 50%;
+      position: absolute;
+      right: 0;
+    }
+  }
 }

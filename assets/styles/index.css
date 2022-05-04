@@ -33,8 +33,6 @@ html {
 body {
   overflow-x: hidden;
   font-family: Roboto, sans-serif;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 header {
@@ -351,6 +349,28 @@ nav h2 {
   height: 100vh;
 }
 
+.whoAmI .whoContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  height: 90vh;
+  position: relative;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whoAmI .whoContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 50%;
+  position: absolute;
+  right: 0;
+}
+
 .together {
   height: 100vh;
 }
@@ -361,7 +381,6 @@ nav h2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 30rem;
 }
 
 .together .description .description_container {
@@ -388,16 +407,30 @@ nav h2 {
   line-height: 2em;
   text-align: justify;
   width: 85%;
+  padding-left: 1.2rem;
+  padding: 2.2rem 0 1rem 1.2rem;
 }
 
 .together .paragraphe_desc:after {
   content: "";
-  width: 10%;
+  width: 5rem;
   height: 5px;
   position: absolute;
   background: #ad6c6c;
-  left: 0;
-  bottom: -35px;
+  left: 1.2rem;
+  bottom: -15px;
+}
+
+.background::before {
+  content: "";
+  background: #fdeae8;
+  width: 5rem;
+  display: block;
+  width: 26rem;
+  height: 11rem;
+  position: absolute;
+  border-radius: 2rem;
+  left: 20px;
 }
 
 .price {
