@@ -28,12 +28,15 @@ for (let i = 0; i < menu.length; i++) {
 
 let lastScroll = 15;
 let logo = document.querySelector(".hideLogo");
+let h2 = document.querySelector(".hideMenu");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY < lastScroll) {
     logo.style.visibility = "visible";
+    h2.style.visibility = "visible";
   } else {
     logo.style.visibility = "hidden";
+    h2.style.visibility = "hidden";
   }
   // transmet la position quand le scroll est terminé
   return lastScroll;

@@ -347,6 +347,7 @@ nav h2 {
 
 .whoAmI {
   height: 100vh;
+  position: relative;
 }
 
 .whoAmI .whoContainer {
@@ -363,7 +364,7 @@ nav h2 {
 }
 
 .whoAmI .whoContainer div {
-  max-width: 40%;
+  max-width: 46%;
 }
 
 .whoAmI .whoContainer div h2 {
@@ -388,6 +389,26 @@ nav h2 {
   max-height: 100vh;
   position: absolute;
   right: 0;
+}
+
+.sophrologie {
+  background-image: url(../img/sophrologie.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 110px;
+  margin: 4rem 0 3rem;
+}
+
+.positif {
+  background-image: url(../img/POSITIF.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 46%;
+  height: 94px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
 }
 
 .together {
@@ -425,7 +446,7 @@ nav h2 {
   font-size: 1em;
   line-height: 2em;
   text-align: justify;
-  width: 85%;
+  width: 70%;
   padding-left: 1.2rem;
   padding: 2.2rem 0 1rem 1.2rem;
 }
@@ -454,6 +475,113 @@ nav h2 {
 
 .price {
   height: 100vh;
+}
+
+.price_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  height: 80vh;
+}
+
+.price_content .price_bulle {
+  border: solid 4px #e2ab9a;
+  width: 20em;
+  height: 20em;
+  border-radius: 30em;
+}
+
+.price_content .price_bulle:nth-child(1) {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.price_content .price_bulle:nth-child(2) {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.price_content .price_bulle:nth-child(3) {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.price_content .price_bulle:nth-child(4) {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.price_content .price_bulle:nth-child(5) {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .workshop {
