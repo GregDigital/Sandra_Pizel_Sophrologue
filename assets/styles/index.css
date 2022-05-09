@@ -494,18 +494,17 @@ nav h2 {
           align-items: center;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  height: 80vh;
+  height: 45vh;
 }
 
 .price_content .price_bulle {
   border: solid 4px #e2ab9a;
-  width: 20em;
-  height: 20em;
+  width: 15em;
+  height: 15em;
   border-radius: 30em;
 }
 
 .price_content .price_bulle:nth-child(1) {
-  display: block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -521,7 +520,6 @@ nav h2 {
 }
 
 .price_content .price_bulle:nth-child(2) {
-  display: block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -537,7 +535,6 @@ nav h2 {
 }
 
 .price_content .price_bulle:nth-child(3) {
-  display: block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -553,7 +550,6 @@ nav h2 {
 }
 
 .price_content .price_bulle:nth-child(4) {
-  display: block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -569,7 +565,6 @@ nav h2 {
 }
 
 .price_content .price_bulle:nth-child(5) {
-  display: block;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
