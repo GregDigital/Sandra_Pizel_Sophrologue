@@ -477,6 +477,29 @@ nav h2 {
   height: 100vh;
 }
 
+.price p {
+  position: relative;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: justify;
+  width: 70%;
+  padding-left: 1.2rem;
+  padding: 2.2rem 0 1rem 1.2rem;
+}
+
+.price p::before {
+  content: "";
+  background: #fdeae8;
+  width: 5rem;
+  display: block;
+  width: 26rem;
+  height: 2rem;
+  position: absolute;
+  border-radius: 2rem;
+  left: 20px;
+  z-index: -1;
+}
+
 .price_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,8 +508,8 @@ nav h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -504,6 +527,26 @@ nav h2 {
   border-radius: 30em;
 }
 
+.price_content .price_bulle h3 {
+  width: 150px;
+  font-family: "MonteCarlo", cursive;
+  font-size: 2rem;
+  font-weight: 100;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.price_content .price_bulle span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  text-align: center;
+  color: #ad6c6c;
+  font-size: 1.5em;
+}
+
 .price_content .price_bulle:nth-child(1) {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -517,6 +560,10 @@ nav h2 {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+}
+
+.price_content .price_bulle:nth-child(1) h3 {
+  margin-bottom: 1em;
 }
 
 .price_content .price_bulle:nth-child(2) {
@@ -534,6 +581,10 @@ nav h2 {
           order: 0;
 }
 
+.price_content .price_bulle:nth-child(2) h3 {
+  margin-bottom: 1em;
+}
+
 .price_content .price_bulle:nth-child(3) {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -547,6 +598,10 @@ nav h2 {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+}
+
+.price_content .price_bulle:nth-child(3) h3 {
+  margin-bottom: 1em;
 }
 
 .price_content .price_bulle:nth-child(4) {
@@ -577,6 +632,10 @@ nav h2 {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
+}
+
+.r {
+  background: url(../img/stain.png) no-repeat center;
 }
 
 .workshop {
