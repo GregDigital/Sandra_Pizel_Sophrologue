@@ -1,3 +1,22 @@
 .workshop {
-  height: 100vh;
+  h1 {
+    height: 10vh;
+  }
+
+  .workShop_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: 90vh;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .workShop_text {
+      width: 70%;
+      font-size: 1.1em;
+      line-height: 2em;
+      text-align: justify;
+    }
+  }
 }
