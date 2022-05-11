@@ -1,4 +1,5 @@
 .workshop {
+  position: relative;
   h1 {
     height: 10vh;
   }
@@ -7,16 +8,50 @@
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     img {
       width: 100%;
       object-fit: cover;
     }
     .workShop_text {
+      position: relative;
       width: 70%;
       font-size: 1.1em;
       line-height: 2em;
       text-align: justify;
+    
+    }
+    .workShop_text:after {
+      content: "";
+      width: 5rem;
+      height: 5px;
+      position: absolute;
+      background: #ad6c6c;
+      bottom: -20px;
+      left: 0;
     }
   }
+
+  .partager{
+background-image: url(../img/PARTAGER.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position-y: bottom;
+transform: rotate(90deg);
+width: 200px;
+height: 100px;
+  }
+
+  .echanger{
+    height: 10vh;
+background-image: url(../img/ECHANGER.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+
+  }
+
+
+
+
 }

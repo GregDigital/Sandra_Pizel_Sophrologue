@@ -615,6 +615,10 @@ nav h2 {
   background: url(../img/stain.png) no-repeat center;
 }
 
+.workshop {
+  position: relative;
+}
+
 .workshop h1 {
   height: 10vh;
 }
@@ -627,7 +631,7 @@ nav h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .workshop .workShop_content img {
@@ -637,10 +641,40 @@ nav h2 {
 }
 
 .workshop .workShop_content .workShop_text {
+  position: relative;
   width: 70%;
   font-size: 1.1em;
   line-height: 2em;
   text-align: justify;
+}
+
+.workshop .workShop_content .workShop_text:after {
+  content: "";
+  width: 5rem;
+  height: 5px;
+  position: absolute;
+  background: #ad6c6c;
+  bottom: -20px;
+  left: 0;
+}
+
+.workshop .partager {
+  background-image: url(../img/PARTAGER.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 200px;
+  height: 100px;
+}
+
+.workshop .echanger {
+  height: 10vh;
+  background-image: url(../img/ECHANGER.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .contact {
