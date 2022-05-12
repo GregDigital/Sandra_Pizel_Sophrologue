@@ -273,6 +273,13 @@ nav h2 {
       justify-content: space-around;
 }
 
+.container_img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 65vh;
+}
+
 .container_intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -677,7 +684,124 @@ nav h2 {
   background-position: center;
 }
 
-.contact {
-  height: 100vh;
+.contact .details_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
+
+.contact h2 {
+  color: #ad6c6c;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin-bottom: 1.5em;
+}
+
+.contact h3 {
+  color: #b6b6b6;
+  margin-bottom: 0.8em;
+}
+
+.contact p {
+  color: #b6b6b6;
+}
+
+.contact .mobile {
+  margin-bottom: 1em;
+}
+
+.contact img {
+  width: 100%;
+}
+
+.contact .map {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 5em;
+}
+
+.title_form {
+  color: #fdeae8;
+  font-size: 6em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+form {
+  max-width: 420px;
+  margin: 5em auto 5em auto;
+}
+
+.feedback-input {
+  color: #b6b6b6;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 2em;
+  line-height: 22px;
+  background-color: transparent;
+  border: 5px solid #fdeae8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 5px solid #e2ab9a;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+  text-align: center;
+}
+
+[type="submit"] {
+  border: solid 5px #fdeae8;
+  border-radius: 3rem;
+  background: #fdeae8;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, #fdeae8));
+  background: linear-gradient(to right, white 50%, #fdeae8 50%);
+  font-family: "MonteCarlo", cursive;
+  font-size: 1.8rem;
+  color: #ad6c6c;
+  width: 50%;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
+[type="submit"]:hover {
+  background: #fdeae8;
+}
+
+[type="submit"]:focus-visible {
+  outline: 5px solid #e2ab9a;
+}
+
+/*
+A GARDER POUR ANIM
+background-attachment: fixed !important;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text !important;
+background: url(../img/pissenlit_one.png);
+background-position: center -272px;*/
 /*# sourceMappingURL=index.css.map */

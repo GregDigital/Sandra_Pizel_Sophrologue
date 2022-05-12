@@ -12,6 +12,11 @@
   align-content: center;
   align-items: center;
   justify-content: space-around;
+  img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 65vh;
+  }
 }
 
 .container_intro {
