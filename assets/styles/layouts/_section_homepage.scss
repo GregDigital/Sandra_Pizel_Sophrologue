@@ -14,8 +14,8 @@
   justify-content: space-around;
   img {
     width: 100%;
-    object-fit: contain;
-    max-height: 65vh;
+    height: 100vh;
+    object-fit: cover;
   }
 }
 
@@ -24,9 +24,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  align-content: normal;
-  margin-left: auto;
-  margin-right: auto;
   .container_intro_text {
     width: 80%;
     display: flex;
@@ -35,7 +32,7 @@
 
     p {
       position: relative;
-      font-size: 1em;
+      font-size: 0.9em;
       line-height: 2em;
       text-align: justify;
       width: 85%;
@@ -50,22 +47,48 @@
     left: 0;
     bottom: -35px;
   }
+}
 
-  .btn_accueil {
-    border: solid 5px $pinklight;
-    padding: 1rem;
-    border-radius: 3rem;
-    background: $pinklight;
-    background: linear-gradient(to right, white 50%, $pinklight 50%);
-    font-family: $font1;
-    font-size: 2rem;
-    color: $titlecolor;
-    width: 20rem;
-    margin-top: 5rem;
-    cursor: pointer;
-    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    &:hover {
-      background: linear-gradient(to right, $pinklight 100%);
-    }
+.btn_accueil {
+  border: solid 5px $pinklight;
+  border-radius: 3rem;
+  background: $pinklight;
+  background: linear-gradient(to right, white 50%, $pinklight 50%);
+  font-family: $font1;
+  font-size: 1.6rem;
+  color: $titlecolor;
+  width: 9em;
+  cursor: pointer;
+  margin-top: 12%;
+  &:hover {
+    background: linear-gradient(to right, $pinklight 100%);
+  }
+}
+
+h1 {
+  color: $titlecolor;
+  font-family: $font1;
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+.sophrologie {
+  background-image: url(../img/sophrologie.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  margin: 4rem 0 3rem;
+}
+
+@media only screen and (max-width: 1247px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  h1 {
+    font-size: 2.5em;
   }
 }
