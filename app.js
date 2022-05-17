@@ -41,3 +41,22 @@ window.addEventListener("scroll", () => {
   // transmet la position quand le scroll est terminé
   return lastScroll;
 });
+
+// Custom cursor
+
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.setAttribute(
+    "style",
+    "top:" + (e.pageY - 20) + "px; left:" + (e.pageX - 20) + "px;"
+  );
+});
+
+document.addEventListener("click", (e) => {
+  cursor.classList.add("pulse");
+
+  setTimeout(() => {
+    cursor.classList.remove("pulse");
+  }, 500);
+});

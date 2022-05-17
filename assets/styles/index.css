@@ -26,6 +26,95 @@ html {
 body {
   overflow-x: hidden;
   font-family: Roboto, sans-serif;
+  cursor: none;
+  height: 100vh;
+}
+
+.cursor {
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  cursor: none;
+  border: 3px solid #ad6c6c;
+  border-radius: 60%;
+  position: absolute;
+  pointer-events: none;
+  -webkit-animation: Rotate 1s infinite alternate;
+          animation: Rotate 1s infinite alternate;
+}
+
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: #fdeae8;
+  border-radius: 50%;
+}
+
+.pulse {
+  -webkit-animation: Pulse 0.6s;
+          animation: Pulse 0.6s;
+  background: #fdeae8;
+  border: 1px solid #fdeae8;
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: scale(1.2) rotate(0deg);
+            transform: scale(1.2) rotate(0deg);
+  }
+  to {
+    -webkit-transform: scale(0.7) rotate(90deg);
+            transform: scale(0.7) rotate(90deg);
+  }
+}
+
+@keyframes Rotate {
+  from {
+    -webkit-transform: scale(1.2) rotate(0deg);
+            transform: scale(1.2) rotate(0deg);
+  }
+  to {
+    -webkit-transform: scale(0.7) rotate(90deg);
+            transform: scale(0.7) rotate(90deg);
+  }
+}
+
+@-webkit-keyframes Pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes Pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(4);
+            transform: scale(4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
 }
 
 header {
@@ -437,7 +526,7 @@ h1 {
 }
 
 .whoAmI .whoContainer div p {
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 2em;
   text-align: justify;
   padding: 2.2rem 0 1rem 1.2rem;
@@ -463,6 +552,10 @@ h1 {
   bottom: 10px;
 }
 
+.together {
+  height: 100vh;
+}
+
 .together .description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,7 +576,7 @@ h1 {
 }
 
 .together .description p {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 2em;
   text-align: justify;
   margin-top: 2rem;
@@ -491,7 +584,7 @@ h1 {
 
 .together .paragraphe_desc {
   position: relative;
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 2em;
   text-align: justify;
   width: 70%;

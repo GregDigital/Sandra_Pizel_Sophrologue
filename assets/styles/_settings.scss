@@ -33,6 +33,59 @@ html {
 body {
   overflow-x: hidden;
   font-family: $font2;
+  cursor: none;
+
+  height: 100vh;
   //margin-left: 2rem;
   //margin-right: 2rem;
+}
+
+.cursor {
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  cursor: none;
+  border: 3px solid $titlecolor;
+  border-radius: 60%;
+  position: absolute;
+  pointer-events: none;
+  animation: Rotate 1s infinite alternate;
+}
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: $pinklight;
+  border-radius: 50%;
+}
+
+.pulse {
+  animation: Pulse 0.6s;
+  background: $pinklight;
+  border: 1px solid $pinklight;
+}
+@keyframes Rotate {
+  from {
+    transform: scale(1.2) rotate(0deg);
+  }
+  to {
+    transform: scale(0.7) rotate(90deg);
+  }
+}
+
+@keyframes Pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }

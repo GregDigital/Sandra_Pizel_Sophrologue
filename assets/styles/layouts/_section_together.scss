@@ -1,5 +1,5 @@
 .together {
-  // height: 100vh;
+  height: 100vh;
 
   .description {
     display: flex;
@@ -15,7 +15,7 @@
     }
 
     p {
-      font-size: 1em;
+      font-size: 0.9em;
       line-height: 2em;
       text-align: justify;
       margin-top: 2rem;
@@ -23,7 +23,7 @@
   }
   .paragraphe_desc {
     position: relative;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 2em;
     text-align: justify;
     width: 70%;

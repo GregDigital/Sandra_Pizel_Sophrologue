@@ -19,13 +19,13 @@
     opacity: 0;
     transform: translateY(30px);
   }
-  img:nth-child(1){
+  img:nth-child(1) {
     animation: appear 0.8s 0.2s ease-out forwards;
   }
-  img:nth-child(2){
+  img:nth-child(2) {
     animation: appear 0.8s 0.4s ease-out forwards;
   }
-  img:nth-child(3){
+  img:nth-child(3) {
     animation: appear 0.8s 0.6s ease-out forwards;
   }
 }
@@ -62,8 +62,6 @@
     left: 0;
     bottom: -35px;
   }
-
-
 }
 
 .btn_accueil {
@@ -100,7 +98,7 @@ h1 {
 }
 
 @keyframes appear {
-  100%{
+  100% {
     opacity: 1;
     transform: none;
   }
