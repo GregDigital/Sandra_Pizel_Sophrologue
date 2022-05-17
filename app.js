@@ -1,10 +1,12 @@
 let burgerMenu = document.getElementById("burger-menu");
 let overlay = document.getElementById("menu");
+let body = document.querySelector("body");
 let tl = gsap.timeline();
 
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
+  body.style.overflow.toggle = "hidden";
   tl.from("li", {
     y: 40,
     opacity: 0,

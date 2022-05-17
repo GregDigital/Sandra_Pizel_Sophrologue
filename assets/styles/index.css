@@ -130,7 +130,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 16;
+  z-index: 2;
   height: 160px;
 }
 
@@ -159,10 +159,10 @@ nav h2 {
 }
 
 #burger-menu {
-  cursor: pointer;
   height: 27px;
   width: 27px;
-  margin: 50px;
+  margin: 40px;
+  padding-bottom: 10px;
   overflow: visible;
   position: relative;
   z-index: 2;
@@ -784,7 +784,7 @@ h1 {
 .workshop .workShop_content .workShop_text {
   position: relative;
   width: 70%;
-  font-size: 1.1em;
+  font-size: 0.9em;
   line-height: 2em;
   text-align: justify;
 }

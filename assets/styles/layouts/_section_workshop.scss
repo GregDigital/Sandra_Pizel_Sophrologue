@@ -16,10 +16,9 @@
     .workShop_text {
       position: relative;
       width: 70%;
-      font-size: 1.1em;
+      font-size: 0.9em;
       line-height: 2em;
       text-align: justify;
-    
     }
     .workShop_text:after {
       content: "";
@@ -32,26 +31,21 @@
     }
   }
 
-  .partager{
-background-image: url(../img/PARTAGER.png);
-background-repeat: no-repeat;
-background-size: contain;
-background-position-y: bottom;
-transform: rotate(90deg);
-width: 200px;
-height: 100px;
+  .partager {
+    background-image: url(../img/PARTAGER.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+    transform: rotate(90deg);
+    width: 200px;
+    height: 100px;
   }
 
-  .echanger{
+  .echanger {
     height: 10vh;
-background-image: url(../img/ECHANGER.png);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
-
+    background-image: url(../img/ECHANGER.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
-
-
-
-
 }
