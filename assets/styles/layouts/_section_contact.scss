@@ -96,6 +96,12 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
+@media only screen and (max-width: 480px) {
+.title_form{
+  font-size: 4em;
+}
+  }
+
 /*
 A GARDER POUR ANIM
 background-attachment: fixed !important;

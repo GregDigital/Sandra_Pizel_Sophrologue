@@ -620,8 +620,8 @@ h1 {
 }
 
 @media only screen and (max-width: 900px) {
-  .whoamI {
-    height: auto !important;
+  .whoAmI {
+    height: auto;
   }
   h2 {
     text-align: center !important;
@@ -637,6 +637,7 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: auto !important;
   }
   .whoContainer img {
     position: relative !important;
@@ -649,6 +650,10 @@ h1 {
   }
   .img_responsive_sandra {
     display: block !important;
+  }
+  .positif {
+    position: relative;
+    width: 100%;
   }
 }
 
@@ -856,6 +861,54 @@ h1 {
   background: url(../img/stain.png) no-repeat center;
 }
 
+@media only screen and (max-width: 1247px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  .cursor {
+    display: none;
+  }
+  body {
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .price {
+    height: auto;
+  }
+  .price .info {
+    position: relative;
+  }
+  .price_content {
+    display: block;
+    height: auto;
+  }
+  .price_content div {
+    display: block;
+    height: auto;
+    margin: 2em auto 2em auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .price_content {
+    display: block;
+    height: auto;
+  }
+  .price_content div {
+    display: block;
+    height: auto;
+    margin: 2em auto 2em auto;
+  }
+}
+
 .workshop {
   position: relative;
 }
@@ -916,6 +969,24 @@ h1 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .workshop .workShop_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .workshop .echanger {
+    width: 100%;
+    height: 58px;
+    margin: 2em auto 2em auto;
+  }
 }
 
 .contact .details_contact {
@@ -1030,6 +1101,12 @@ textarea {
 
 [type="submit"]:focus-visible {
   outline: 5px solid #e2ab9a;
+}
+
+@media only screen and (max-width: 480px) {
+  .title_form {
+    font-size: 4em;
+  }
 }
 
 /*
