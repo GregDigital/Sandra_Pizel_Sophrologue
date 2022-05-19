@@ -35,6 +35,10 @@
   }
 }
 
+.img_responsive_sandra {
+  display: none;
+}
+
 .positif {
   background-image: url(../img/POSITIF.png);
   background-repeat: no-repeat;
@@ -44,4 +48,31 @@
   position: absolute;
   left: 10px;
   bottom: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .whoamI {
+    height: auto !important;
+  }
+  h2 {
+    text-align: center !important;
+  }
+  .whoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      position: relative !important;
+    }
+    div {
+      max-width: 80% !important;
+    }
+  }
+  .sandra_pizel {
+    display: none;
+  }
+
+  .img_responsive_sandra {
+    display: block !important;
+  }
 }

@@ -11,7 +11,7 @@
   grid-template-columns: 25% 25% 25%;
   align-content: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   img {
     width: 100%;
     height: 100vh;
@@ -27,6 +27,15 @@
   }
   img:nth-child(3) {
     animation: appear 0.8s 0.6s ease-out forwards;
+  }
+}
+
+.img_responsive {
+  display: none;
+  margin-top: 2em;
+  img {
+    object-fit: cover;
+    width: 100%;
   }
 }
 
@@ -112,5 +121,44 @@ h1 {
 @media only screen and (max-width: 1070px) {
   h1 {
     font-size: 2.5em;
+  }
+  .cursor {
+    display: none;
+  }
+  body {
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    position: relative;
+  }
+
+  .homepage {
+    display: block;
+    height: auto;
+  }
+  .img_responsive {
+    display: block;
+  }
+  .container_img {
+    display: none;
+  }
+  .together {
+    height: auto !important;
+    .description {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .description_container {
+      max-width: 30% !important;
+      margin: 3em;
+    }
+    .description_container_img {
+      object-fit: cover;
+      max-width: 100% !important;
+    }
   }
 }

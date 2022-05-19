@@ -6,7 +6,8 @@ let tl = gsap.timeline();
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
-  body.style.overflow.toggle = "hidden";
+  body.classList.toggle("true");
+
   tl.from("li", {
     y: 40,
     opacity: 0,
@@ -23,6 +24,7 @@ for (let i = 0; i < menu.length; i++) {
   el.addEventListener("click", function () {
     overlay.classList.toggle("overlay");
     burgerMenu.classList.toggle("close");
+    body.classList.toggle("true");
   });
 }
 
