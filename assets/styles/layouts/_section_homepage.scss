@@ -162,3 +162,13 @@ h1 {
     }
   }
 }
+
+
+@media only screen and (max-width: 480px) {
+  .together{
+  .description_container {
+    max-width: 80% !important;
+    margin: 3em;
+  }
+}
+}

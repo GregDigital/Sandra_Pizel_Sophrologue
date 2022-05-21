@@ -162,7 +162,7 @@ nav h2 {
   height: 27px;
   width: 27px;
   margin: 40px;
-  padding-bottom: 10px;
+  padding: 20px;
   overflow: visible;
   position: relative;
   z-index: 2;
@@ -211,8 +211,8 @@ nav h2 {
 }
 
 #burger-menu.close span {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 13px;
   width: 27px;
 }
@@ -555,6 +555,13 @@ h1 {
     -o-object-fit: cover;
        object-fit: cover;
     max-width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .together .description_container {
+    max-width: 80% !important;
+    margin: 3em;
   }
 }
 
