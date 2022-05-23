@@ -167,3 +167,11 @@ path:nth-child(6) {
 .active path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
+
+@media only screen and (max-width: 480px) {
+  nav {
+    h2 {
+      display: none;
+    }
+  }
+}

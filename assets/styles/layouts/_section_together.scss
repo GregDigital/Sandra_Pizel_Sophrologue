@@ -54,3 +54,31 @@
   left: 20px;
 }
 
+@media only screen and (max-width: 480px) {
+  .together {
+    .description_container {
+      max-width: 80% !important;
+      margin: 3em;
+    }
+
+    .paragraphe_desc {
+      position: relative;
+      font-size: 0.9em;
+      line-height: 2em;
+      text-align: justify;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .background::before {
+    content: "";
+    background: #fdeae8;
+    width: 100%;
+    display: block;
+    height: 11rem;
+    position: absolute;
+    border-radius: 2rem;
+    left: 0px;
+  }
+}

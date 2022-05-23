@@ -113,8 +113,6 @@
   background: url(../img/stain.png) no-repeat center;
 }
 
-
-
 @media only screen and (max-width: 1247px) {
   h1 {
     font-size: 3em;
@@ -134,32 +132,46 @@
 @media only screen and (max-width: 900px) {
   .price {
     height: auto;
-    .info{
+    .info {
       position: relative;
-     }
-   
+    }
   }
-  .price_content{
+  .price_content {
     display: block;
     height: auto;
-    div{
+    div {
       display: block;
       height: auto;
       margin: 2em auto 2em auto;
     }
   }
- 
 }
 @media only screen and (max-width: 480px) {
-  .price_content{
+  .price {
+    .paragraphe_price {
+      width: 100%;
+      padding-left: 0;
+      padding-top: 0;
+    }
+    .background_price::before {
+      content: "";
+      background: #fdeae8;
+      display: block;
+      width: 100%;
+      height: 4rem;
+      position: absolute;
+      border-radius: 2rem;
+      left: 0px;
+    }
+  }
+
+  .price_content {
     display: block;
     height: auto;
-    div{
+    div {
       display: block;
       height: auto;
       margin: 2em auto 2em auto;
     }
   }
-
-
 }

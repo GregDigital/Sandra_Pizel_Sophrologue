@@ -163,12 +163,25 @@ h1 {
   }
 }
 
-
 @media only screen and (max-width: 480px) {
-  .together{
-  .description_container {
-    max-width: 80% !important;
-    margin: 3em;
+  .container_intro {
+    .container_intro_text {
+      p {
+        width: 100%;
+      }
+    }
+
+    p:after {
+      content: "";
+      width: 15%;
+      height: 5px;
+      position: absolute;
+      background: $titlecolor;
+      left: 0;
+      bottom: -35px;
+    }
   }
-}
+  .btn_accueil {
+    margin-top: 30%;
+  }
 }

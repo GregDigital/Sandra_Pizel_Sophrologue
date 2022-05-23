@@ -358,6 +358,12 @@ path:nth-child(6) {
           transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
+@media only screen and (max-width: 480px) {
+  nav h2 {
+    display: none;
+  }
+}
+
 .homepage {
   display: -ms-grid;
   display: grid;
@@ -582,9 +588,20 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
-  .together .description_container {
-    max-width: 80% !important;
-    margin: 3em;
+  .container_intro .container_intro_text p {
+    width: 100%;
+  }
+  .container_intro p:after {
+    content: "";
+    width: 15%;
+    height: 5px;
+    position: absolute;
+    background: #ad6c6c;
+    left: 0;
+    bottom: -35px;
+  }
+  .btn_accueil {
+    margin-top: 30%;
   }
 }
 
@@ -687,6 +704,15 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .whoAmI .whoContainer div p {
+    font-size: 0.9em;
+    line-height: 2em;
+    text-align: justify;
+    padding: 0;
+  }
+}
+
 .together {
   height: 100vh;
 }
@@ -747,6 +773,31 @@ h1 {
   position: absolute;
   border-radius: 2rem;
   left: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .together .description_container {
+    max-width: 80% !important;
+    margin: 3em;
+  }
+  .together .paragraphe_desc {
+    position: relative;
+    font-size: 0.9em;
+    line-height: 2em;
+    text-align: justify;
+    width: 100%;
+    padding: 0;
+  }
+  .background::before {
+    content: "";
+    background: #fdeae8;
+    width: 100%;
+    display: block;
+    height: 11rem;
+    position: absolute;
+    border-radius: 2rem;
+    left: 0px;
+  }
 }
 
 .price {
@@ -928,6 +979,21 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
+  .price .paragraphe_price {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .price .background_price::before {
+    content: "";
+    background: #fdeae8;
+    display: block;
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    border-radius: 2rem;
+    left: 0px;
+  }
   .price_content {
     display: block;
     height: auto;
@@ -1135,7 +1201,7 @@ textarea {
 
 @media only screen and (max-width: 480px) {
   .title_form {
-    font-size: 4em;
+    font-size: 2.3em;
   }
 }
 
