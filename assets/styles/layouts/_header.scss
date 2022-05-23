@@ -81,7 +81,7 @@ nav {
   &.close {
     // TOP
     span:before {
-      top: 0px;
+      top: 50%;
       transform: rotate(90deg);
       width: 27px;
     }
@@ -96,7 +96,7 @@ nav {
 
     // BOTTOM
     span:after {
-      top: 0px;
+      top: 0;
       left: 0;
       transform: rotate(90deg);
       opacity: 0;

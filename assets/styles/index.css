@@ -208,7 +208,7 @@ nav h2 {
 }
 
 #burger-menu.close span:before {
-  top: 0px;
+  top: 50%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   width: 27px;
@@ -223,7 +223,7 @@ nav h2 {
 }
 
 #burger-menu.close span:after {
-  top: 0px;
+  top: 0;
   left: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
