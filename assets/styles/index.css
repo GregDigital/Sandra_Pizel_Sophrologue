@@ -588,6 +588,9 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em !important;
+  }
   .container_intro .container_intro_text p {
     width: 100%;
   }
