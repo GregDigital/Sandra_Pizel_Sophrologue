@@ -7,11 +7,10 @@ burgerMenu.addEventListener("click", function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");
-
   tl.from("li", {
     y: 40,
     opacity: 0,
-    stagger: 0.25,
+    stagger: 0.2,
   });
 });
 
@@ -25,6 +24,9 @@ for (let i = 0; i < menu.length; i++) {
     overlay.classList.toggle("overlay");
     burgerMenu.classList.toggle("close");
     body.classList.toggle("true");
+    tl.from("li", {
+      opacity: 1,
+    });
   });
 }
 
