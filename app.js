@@ -22,7 +22,7 @@ for (let i = 0; i < menu.length; i++) {
   const el = menu[i];
   el.addEventListener("click", function () {
     overlay.classList.toggle("overlay");
-    burgerMenu.classList.toggle("close");
+    burgerMenu.classList.toggle("active");
     body.classList.toggle("true");
     tl.from("li", {
       opacity: 1,
