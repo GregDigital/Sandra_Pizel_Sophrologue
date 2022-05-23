@@ -31,10 +31,12 @@ nav {
   height: 27px;
   width: 27px;
   margin: 40px;
-  padding: 20px;
+  padding: 25px;
   overflow: visible;
   position: relative;
   z-index: 2;
+  border-radius: 50px;
+  border: solid 2px $titlecolor;
 
   // THE LINES
   span,
@@ -62,9 +64,10 @@ nav {
 
   // MIDDLE
   span {
-    right: 0px;
-    top: 13px;
+    right: 50%;
+    top: 50%;
     width: 27px;
+    transform: translate(50%, -50%);
   }
 
   // BOTTOM
@@ -81,13 +84,13 @@ nav {
       top: 0px;
       transform: rotate(90deg);
       width: 27px;
-     
     }
 
     // MIDDLE
     span {
       transform: rotate(45deg);
-      top: 13px;
+      right: 20%;
+      top: 50%;
       width: 27px;
     }
 
@@ -129,6 +132,10 @@ nav {
 
   ul {
     padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   li {
@@ -139,10 +146,9 @@ nav {
   a {
     font-family: $font1;
     color: $titlecolor;
-    font-size: 3rem;
+    font-size: 2.1em;
     display: block;
-
-    margin-bottom: 30px;
+    margin-bottom: 0.5em;
     text-decoration: none;
   }
 }

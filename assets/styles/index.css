@@ -162,10 +162,12 @@ nav h2 {
   height: 27px;
   width: 27px;
   margin: 40px;
-  padding: 20px;
+  padding: 25px;
   overflow: visible;
   position: relative;
   z-index: 2;
+  border-radius: 50px;
+  border: solid 2px #ad6c6c;
 }
 
 #burger-menu span,
@@ -192,9 +194,11 @@ nav h2 {
 }
 
 #burger-menu span {
-  right: 0px;
-  top: 13px;
+  right: 50%;
+  top: 50%;
   width: 27px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
 
 #burger-menu span:after {
@@ -213,7 +217,8 @@ nav h2 {
 #burger-menu.close span {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 13px;
+  right: 20%;
+  top: 50%;
   width: 27px;
 }
 
@@ -259,6 +264,11 @@ nav h2 {
 
 #menu ul {
   padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #menu li {
@@ -269,9 +279,9 @@ nav h2 {
 #menu a {
   font-family: "MonteCarlo", cursive;
   color: #ad6c6c;
-  font-size: 3rem;
+  font-size: 2.1em;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 0.5em;
   text-decoration: none;
 }
 
