@@ -38,10 +38,8 @@ let h2 = document.querySelector(".hideMenu");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY < lastScroll) {
-    logo.style.visibility = "visible";
     h2.style.visibility = "visible";
   } else {
-    logo.style.visibility = "hidden";
     h2.style.visibility = "hidden";
   }
   // transmet la position quand le scroll est terminé

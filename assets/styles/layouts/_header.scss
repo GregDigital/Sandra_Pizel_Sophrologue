@@ -16,14 +16,14 @@ header {
 
 nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  width: 15%;
+  margin: 1em;
+
   h2 {
     color: $titlecolor;
     font-family: $font1;
     font-size: 2.5rem;
     font-weight: 100;
+    margin-right: 0.5em;
   }
 }
 
