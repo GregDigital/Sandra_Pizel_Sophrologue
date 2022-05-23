@@ -1,10 +1,10 @@
-let burgerMenu = document.getElementById("burger-menu");
+let burgerMenu = document.querySelector(".container");
 let overlay = document.getElementById("menu");
 let body = document.querySelector("body");
 let tl = gsap.timeline();
 
 burgerMenu.addEventListener("click", function () {
-  this.classList.toggle("close");
+  this.classList.toggle("active");
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");
   tl.from("li", {
