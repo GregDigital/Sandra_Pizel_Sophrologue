@@ -77,7 +77,7 @@ textarea {
 }
 
 [type="submit"] {
-  border: solid 5px $pinklight;
+  border: solid 3px $pinklight;
   border-radius: 3rem;
   background: $pinklight;
   background: linear-gradient(to right, white 50%, $pinklight 50%);
@@ -87,6 +87,7 @@ textarea {
   width: 50%;
   margin: 0 auto 0 auto;
   display: block;
+  padding-bottom: 5px;
 }
 [type="submit"]:hover {
   background: $pinklight;

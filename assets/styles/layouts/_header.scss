@@ -1,13 +1,14 @@
 header {
   display: flex;
   align-content: baseline;
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
-  height: 160px;
+  
 
   img {
     padding: 1rem;
@@ -168,7 +169,12 @@ path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
+
+
 @media only screen and (max-width: 480px) {
+  .hideLogo{
+    width: 110px;
+  }
   nav {
     h2 {
       display: none;

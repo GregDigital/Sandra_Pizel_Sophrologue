@@ -74,7 +74,7 @@
 }
 
 .btn_accueil {
-  border: solid 5px $pinklight;
+  border: solid 3px $pinklight;
   border-radius: 3rem;
   background: $pinklight;
   background: linear-gradient(to right, white 50%, $pinklight 50%);
@@ -84,6 +84,7 @@
   width: 9em;
   cursor: pointer;
   margin-top: 12%;
+  padding-bottom:5px;
   &:hover {
     background: linear-gradient(to right, $pinklight 100%);
   }
@@ -161,6 +162,9 @@ h1 {
       max-width: 100% !important;
     }
   }
+  .img_responsive {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -174,6 +178,7 @@ h1 {
       }
     }
 
+
     p:after {
       content: "";
       width: 15%;
@@ -184,7 +189,20 @@ h1 {
       bottom: -35px;
     }
   }
+
+  .together {
+
+  
+    .description_container {
+      max-width: 80% !important;
+     
+    }
+ 
+  }
   .btn_accueil {
     margin-top: 30%;
+  }
+  .img_responsive {
+    margin-top: 0;
   }
 }
