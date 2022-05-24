@@ -1,5 +1,5 @@
 .price {
-  height: 100vh;
+  
   position: relative;
   .background_price::before {
     content: "";
@@ -31,11 +31,8 @@
     }
   }
   .info {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 0;
-    font-size: 1.5em;
+    font-weight: lighter;
+    font-size: 1.2em;
     color: $titlecolor;
     text-align: center;
   }

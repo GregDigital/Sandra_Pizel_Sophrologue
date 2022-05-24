@@ -22,6 +22,16 @@
         line-height: 2em;
         text-align: justify;
         padding: 2.2rem 0 1rem 1.2rem;
+        position: relative;
+      }
+      p:after{
+        content: "";
+        width: 5rem;
+        height: 5px;
+        position: absolute;
+        background: #ad6c6c;
+        left: 1.1em;
+       bottom: -15px;
       }
     }
 

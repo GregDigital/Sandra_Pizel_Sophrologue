@@ -455,7 +455,6 @@ path:nth-child(6) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
   opacity: 0;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
@@ -566,6 +565,16 @@ h1 {
   .container_img {
     display: none;
   }
+  .container_intro {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  .container_intro .container_intro_text {
+    width: 100%;
+  }
+  .container_intro .container_intro_text p {
+    width: 100%;
+  }
   .together {
     height: auto !important;
   }
@@ -658,6 +667,17 @@ h1 {
   line-height: 2em;
   text-align: justify;
   padding: 2.2rem 0 1rem 1.2rem;
+  position: relative;
+}
+
+.whoAmI .whoContainer div p:after {
+  content: "";
+  width: 5rem;
+  height: 5px;
+  position: absolute;
+  background: #ad6c6c;
+  left: 1.1em;
+  bottom: -15px;
 }
 
 .whoAmI .whoContainer img {
@@ -791,7 +811,6 @@ h1 {
 }
 
 .price {
-  height: 100vh;
   position: relative;
 }
 
@@ -828,12 +847,8 @@ h1 {
 }
 
 .price .info {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  bottom: 0;
-  font-size: 1.5em;
+  font-weight: lighter;
+  font-size: 1.2em;
   color: #ad6c6c;
   text-align: center;
 }

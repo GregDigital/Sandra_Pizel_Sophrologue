@@ -48,7 +48,6 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    width: 80%;
     opacity: 0;
     transform: translateY(30px);
     animation: appear 1s 1s ease-out forwards;
@@ -144,6 +143,14 @@ h1 {
   }
   .container_img {
     display: none;
+  }
+  .container_intro{
+    width: 90%;
+    margin: 0 auto 0 auto;
+    .container_intro_text{
+      width: 100%;
+      p{width: 100%;}
+    }
   }
   .together {
     height: auto !important;
