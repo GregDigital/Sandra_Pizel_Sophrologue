@@ -560,6 +560,9 @@ h1 {
 }
 
 @media only screen and (max-width: 900px) {
+  h1 {
+    margin-bottom: 1em;
+  }
   header {
     position: relative;
   }
@@ -587,6 +590,20 @@ h1 {
     height: auto !important;
     margin: 0 auto 0 auto;
     width: 90%;
+  }
+  .together .background .paragraphe_desc {
+    width: 100%;
+    padding-left: 0rem;
+    padding: 0;
+  }
+  .together .background .paragraphe_desc:after {
+    content: "";
+    width: 15%;
+    height: 5px;
+    position: absolute;
+    background: #ad6c6c;
+    left: 0;
+    bottom: -35px;
   }
   .together .description {
     display: -webkit-box;
@@ -617,7 +634,8 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 2em !important;
+    font-size: 2.2em !important;
+    margin-bottom: 1em;
   }
   .container_intro .container_intro_text p {
     width: 100%;
@@ -1279,7 +1297,29 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact h1 {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  .contact .details_contact {
+    width: 90%;
+    margin: 5em auto 5em auto;
+  }
+  .contact .form {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+}
+
 @media only screen and (max-width: 480px) {
+  .contact h1 {
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+  .contact .details_contact .details {
+    margin-bottom: 2em;
+  }
   .title_form {
     font-size: 2.3em;
   }

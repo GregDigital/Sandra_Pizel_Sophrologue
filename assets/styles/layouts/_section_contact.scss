@@ -97,7 +97,35 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact {
+    h1 {
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
+    .details_contact {
+      width: 90%;
+      margin: 5em auto 5em auto;
+    }
+    .form {
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
+  }
+}
+
 @media only screen and (max-width: 480px) {
+  .contact {
+    h1 {
+      width: 90%;
+      margin: 0 auto 0 auto;
+    }
+    .details_contact {
+      .details {
+        margin-bottom: 2em;
+      }
+    }
+  }
   .title_form {
     font-size: 2.3em;
   }
