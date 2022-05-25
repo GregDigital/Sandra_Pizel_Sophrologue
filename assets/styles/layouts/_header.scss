@@ -8,7 +8,6 @@ header {
   left: 0;
   right: 0;
   z-index: 2;
-  
 
   img {
     padding: 1rem;
@@ -39,7 +38,7 @@ nav {
   opacity: 0;
   text-align: center;
   padding-top: 20px;
-  transition: all 0.6s ease-in-out;
+  // transition: all 0.6s ease-in-out;
   transform: translateX(100%);
   border-radius: 70% 0% 0% 0%;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
@@ -169,10 +168,8 @@ path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
-
-
 @media only screen and (max-width: 480px) {
-  .hideLogo{
+  .hideLogo {
     width: 110px;
   }
   nav {
