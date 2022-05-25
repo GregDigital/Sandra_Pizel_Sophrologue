@@ -591,6 +591,9 @@ h1 {
     margin: 0 auto 0 auto;
     width: 90%;
   }
+  .together .background::before {
+    display: none;
+  }
   .together .background .paragraphe_desc {
     width: 100%;
     padding-left: 0rem;

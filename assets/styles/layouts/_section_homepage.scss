@@ -167,6 +167,9 @@ h1 {
     margin: 0 auto 0 auto;
     width: 90%;
     .background {
+      &::before {
+        display: none;
+      }
       .paragraphe_desc {
         width: 100%;
         padding-left: 0rem;
