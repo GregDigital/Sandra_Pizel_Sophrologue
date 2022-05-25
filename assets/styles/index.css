@@ -145,6 +145,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   margin: 1em;
+  position: relative;
+  z-index: 3;
 }
 
 nav h2 {

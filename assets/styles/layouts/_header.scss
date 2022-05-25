@@ -17,6 +17,8 @@ header {
 nav {
   display: flex;
   margin: 1em;
+  position: relative;
+  z-index: 3;
 
   h2 {
     color: $titlecolor;

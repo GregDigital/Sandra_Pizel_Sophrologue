@@ -12,7 +12,6 @@ burgerMenu.addEventListener("click", function () {
     opacity: 0,
     stagger: 0.2,
   });*/
-  return;
 });
 
 //
