@@ -1393,5 +1393,19 @@ footer .follow .fa-brands {
   .img_footer {
     width: 110px;
   }
+  .content_logo span:nth-child(1) {
+    margin-right: 0.5em;
+  }
+  .content_logo img {
+    width: 70px;
+  }
+  .content_logo .span_positif {
+    margin-left: 0.5em;
+  }
+  footer .follow .fa-brands {
+    top: 44%;
+    translate: -44% 0;
+    right: 20px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
