@@ -36,6 +36,11 @@
   img {
     object-fit: cover;
     width: 100%;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  img:nth-child(1) {
+    animation: appear 0.8s 0.2s ease-out forwards;
   }
 }
 
@@ -83,7 +88,7 @@
   width: 9em;
   cursor: pointer;
   margin-top: 12%;
-  padding-bottom:5px;
+  padding-bottom: 5px;
   &:hover {
     background: linear-gradient(to right, $pinklight 100%);
   }
@@ -144,16 +149,20 @@ h1 {
   .container_img {
     display: none;
   }
-  .container_intro{
+  .container_intro {
     width: 90%;
     margin: 0 auto 0 auto;
-    .container_intro_text{
+    .container_intro_text {
       width: 100%;
-      p{width: 100%;}
+      p {
+        width: 100%;
+      }
     }
   }
   .together {
     height: auto !important;
+    margin: 0 auto 0 auto;
+    width: 90%;
     .description {
       display: flex;
       flex-direction: row;
@@ -183,8 +192,10 @@ h1 {
       p {
         width: 100%;
       }
+      a {
+        margin: 0 auto 0 auto;
+      }
     }
-
 
     p:after {
       content: "";
@@ -193,21 +204,17 @@ h1 {
       position: absolute;
       background: $titlecolor;
       left: 0;
-      bottom: -35px;
+      bottom: -36px;
     }
   }
 
   .together {
-
-  
     .description_container {
       max-width: 80% !important;
-     
     }
- 
   }
   .btn_accueil {
-    margin-top: 30%;
+    margin: 20% 0 10% 0;
   }
   .img_responsive {
     margin-top: 0;

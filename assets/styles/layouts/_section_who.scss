@@ -24,14 +24,14 @@
         padding: 2.2rem 0 1rem 1.2rem;
         position: relative;
       }
-      p:after{
+      p:after {
         content: "";
-        width: 5rem;
+        width: 15%;
         height: 5px;
         position: absolute;
         background: #ad6c6c;
-        left: 1.1em;
-       bottom: -15px;
+        left: 0;
+        bottom: -36px;
       }
     }
 
@@ -63,22 +63,28 @@
 @media only screen and (max-width: 900px) {
   .whoAmI {
     height: auto;
+    margin: 0 auto 0 auto;
+    width: 90%;
+    .whoContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto !important;
+      img {
+        position: relative !important;
+      }
+      div {
+        max-width: 100% !important;
+        p {
+          padding: 0;
+        }
+      }
+    }
   }
   h2 {
     text-align: center !important;
   }
-  .whoContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto !important;
-    img {
-      position: relative !important;
-    }
-    div {
-      max-width: 80% !important;
-    }
-  }
+
   .sandra_pizel {
     display: none;
   }
@@ -88,8 +94,11 @@
   }
   .positif {
     position: relative;
-    width: 80%;
-    margin: 1em auto 1em auto;
+    width: 100%;
+    margin: 5em auto 1em auto;
+    background-position: center;
+    left: 0;
+    bottom: 0;
   }
 }
 
