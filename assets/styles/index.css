@@ -157,17 +157,11 @@ nav h2 {
 
 #menu {
   z-index: 1;
-  min-width: 100%;
-  min-height: 100%;
   position: fixed;
   top: 0;
-  height: 0;
   visibility: hidden;
-  opacity: 0;
   text-align: center;
-  padding-top: 20px;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  display: none;
   /*
   border-radius: 70% 0% 0% 0%;
   box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;*/
@@ -175,13 +169,10 @@ nav h2 {
 
 #menu.overlay {
   visibility: visible;
-  opacity: 1;
-  padding-top: 100px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  display: block;
   background: #fdeae8;
-  -webkit-box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
-          box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+  height: 100vh;
+  width: 100vw;
 }
 
 #menu ul {
