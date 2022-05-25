@@ -41,14 +41,12 @@
     bottom: -15px;
   }
 }
-
 .background::before {
   content: "";
   background: #fdeae8;
-  width: 5rem;
   display: block;
   width: 26rem;
-  height: 11rem;
+  height: 11em;
   position: absolute;
   border-radius: 2rem;
   left: 20px;

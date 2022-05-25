@@ -452,6 +452,7 @@ path:nth-child(6) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .container_intro .container_intro_text {
@@ -591,9 +592,6 @@ h1 {
     margin: 0 auto 0 auto;
     width: 90%;
   }
-  .together .background::before {
-    display: none;
-  }
   .together .background .paragraphe_desc {
     width: 100%;
     padding-left: 0rem;
@@ -607,6 +605,11 @@ h1 {
     background: #ad6c6c;
     left: 0;
     bottom: -35px;
+  }
+  .together .background::before {
+    width: 60%;
+    height: 6em;
+    border-radius: 0.9rem;
   }
   .together .description {
     display: -webkit-box;
@@ -843,10 +846,9 @@ h1 {
 .background::before {
   content: "";
   background: #fdeae8;
-  width: 5rem;
   display: block;
   width: 26rem;
-  height: 11rem;
+  height: 11em;
   position: absolute;
   border-radius: 2rem;
   left: 20px;
@@ -1032,10 +1034,10 @@ h1 {
     content: "";
     background: #fdeae8;
     display: block;
-    width: 100%;
-    height: 4rem;
+    width: 60%;
+    height: 6rem;
     position: absolute;
-    border-radius: 2rem;
+    border-radius: 1rem;
     left: 0px;
   }
   .price .info {
@@ -1066,10 +1068,10 @@ h1 {
     content: "";
     background: #fdeae8;
     display: block;
-    width: 100%;
-    height: 4rem;
+    width: 60%;
+    height: 6rem;
     position: absolute;
-    border-radius: 2rem;
+    border-radius: 1rem;
     left: 0px;
   }
   .price_content {

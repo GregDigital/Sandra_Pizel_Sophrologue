@@ -49,6 +49,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
   .container_intro_text {
     width: 80%;
     display: flex;
@@ -167,9 +168,6 @@ h1 {
     margin: 0 auto 0 auto;
     width: 90%;
     .background {
-      &::before {
-        display: none;
-      }
       .paragraphe_desc {
         width: 100%;
         padding-left: 0rem;
@@ -184,7 +182,13 @@ h1 {
           bottom: -35px;
         }
       }
+      &::before {
+        width: 60%;
+        height: 6em;
+        border-radius: 0.9rem;
+      }
     }
+
     .description {
       display: flex;
       flex-direction: row;
@@ -200,6 +204,7 @@ h1 {
       max-width: 100% !important;
     }
   }
+
   .img_responsive {
     margin-top: 0;
   }
