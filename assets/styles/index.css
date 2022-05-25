@@ -168,9 +168,6 @@ nav h2 {
   padding-top: 20px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  border-radius: 70% 0% 0% 0%;
-  -webkit-box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
-          box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
 }
 
 #menu.overlay {
