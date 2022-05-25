@@ -40,6 +40,9 @@ nav {
   padding-top: 20px;
   // transition: all 0.6s ease-in-out;
   transform: translateX(100%);
+  /*
+  border-radius: 70% 0% 0% 0%;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;*/
 
   &.overlay {
     visibility: visible;
