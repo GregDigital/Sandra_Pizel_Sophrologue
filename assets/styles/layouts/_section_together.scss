@@ -29,6 +29,9 @@
     width: 70%;
     padding-left: 1.2rem;
     padding: 2.2rem 0 1rem 3.2rem;
+    background: linear-gradient(140deg, white 50%, #fdeae8 50%);
+    padding: 1em;
+    border-radius: 0.5em;
   }
 
   .paragraphe_desc:after {
@@ -41,6 +44,7 @@
     bottom: -15px;
   }
 }
+/*
 .background::before {
   content: "";
   background: #fdeae8;
@@ -51,3 +55,4 @@
   border-radius: 2rem;
   left: 20px;
 }
+*/

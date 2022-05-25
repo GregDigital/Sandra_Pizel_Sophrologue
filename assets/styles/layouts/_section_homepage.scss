@@ -59,6 +59,9 @@
     animation: appear 1s 1s ease-out forwards;
 
     p {
+      background: linear-gradient(50deg, #fdeae8 50%, white 50%);
+      padding: 1em;
+      border-radius: 0.5em;
       position: relative;
       font-size: 0.9em;
       line-height: 2em;
@@ -171,7 +174,7 @@ h1 {
       .paragraphe_desc {
         width: 100%;
         padding-left: 0rem;
-        padding: 0;
+        padding: 1em;
         &:after {
           content: "";
           width: 15%;

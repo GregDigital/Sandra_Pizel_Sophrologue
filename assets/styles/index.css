@@ -472,6 +472,9 @@ path:nth-child(6) {
 }
 
 .container_intro .container_intro_text p {
+  background: linear-gradient(50deg, #fdeae8 50%, white 50%);
+  padding: 1em;
+  border-radius: 0.5em;
   position: relative;
   font-size: 0.9em;
   line-height: 2em;
@@ -595,7 +598,7 @@ h1 {
   .together .background .paragraphe_desc {
     width: 100%;
     padding-left: 0rem;
-    padding: 0;
+    padding: 1em;
   }
   .together .background .paragraphe_desc:after {
     content: "";
@@ -705,6 +708,9 @@ h1 {
   text-align: justify;
   padding: 2.2rem 0 1rem 1.2rem;
   position: relative;
+  background: linear-gradient(45deg, #fdeae8 50%, white 50%);
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 .whoAmI .whoContainer div p:after {
@@ -767,7 +773,7 @@ h1 {
     max-width: 100% !important;
   }
   .whoAmI .whoContainer div p {
-    padding: 0;
+    padding: 1em;
   }
   h2 {
     text-align: center !important;
@@ -793,7 +799,7 @@ h1 {
     font-size: 0.9em;
     line-height: 2em;
     text-align: justify;
-    padding: 0;
+    padding: 1em;
   }
 }
 
@@ -831,6 +837,9 @@ h1 {
   width: 70%;
   padding-left: 1.2rem;
   padding: 2.2rem 0 1rem 3.2rem;
+  background: linear-gradient(140deg, white 50%, #fdeae8 50%);
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 .together .paragraphe_desc:after {
@@ -843,6 +852,7 @@ h1 {
   bottom: -15px;
 }
 
+/*
 .background::before {
   content: "";
   background: #fdeae8;
@@ -853,20 +863,20 @@ h1 {
   border-radius: 2rem;
   left: 20px;
 }
-
+*/
 .price {
   position: relative;
-}
-
-.price .background_price::before {
-  content: "";
-  background: #fdeae8;
-  display: block;
-  width: 26rem;
-  height: 4rem;
-  position: absolute;
-  border-radius: 2rem;
-  left: 20px;
+  /*
+  .background_price::before {
+    content: "";
+    background: #fdeae8;
+    display: block;
+    width: 26rem;
+    height: 4rem;
+    position: absolute;
+    border-radius: 2rem;
+    left: 20px;
+  }*/
 }
 
 .price .paragraphe_price {
@@ -877,6 +887,9 @@ h1 {
   width: 70%;
   padding-left: 3.2em;
   padding-top: 1em;
+  background: linear-gradient(140deg, white 50%, #fdeae8 50%);
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 .price .paragraphe_price::after {
@@ -1014,6 +1027,17 @@ h1 {
     height: auto;
     margin: 0 auto 2em auto;
     width: 90%;
+    /*
+    .background_price::before {
+      content: "";
+      background: #fdeae8;
+      display: block;
+      width: 60%;
+      height: 6rem;
+      position: absolute;
+      border-radius: 1rem;
+      left: 0px;
+    }*/
   }
   .price .paragraphe_price {
     width: 100%;
@@ -1029,16 +1053,6 @@ h1 {
     left: 0;
     bottom: -36px;
     padding-left: 0;
-  }
-  .price .background_price::before {
-    content: "";
-    background: #fdeae8;
-    display: block;
-    width: 60%;
-    height: 6rem;
-    position: absolute;
-    border-radius: 1rem;
-    left: 0px;
   }
   .price .info {
     position: relative;
@@ -1059,20 +1073,23 @@ h1 {
 }
 
 @media only screen and (max-width: 480px) {
+  .price {
+    /*
+    .background_price::before {
+      content: "";
+      background: #fdeae8;
+      display: block;
+      width: 60%;
+      height: 6rem;
+      position: absolute;
+      border-radius: 1rem;
+      left: 0px;
+    }*/
+  }
   .price .paragraphe_price {
     width: 100%;
     padding-left: 0;
     padding-top: 0;
-  }
-  .price .background_price::before {
-    content: "";
-    background: #fdeae8;
-    display: block;
-    width: 60%;
-    height: 6rem;
-    position: absolute;
-    border-radius: 1rem;
-    left: 0px;
   }
   .price_content {
     display: block;
@@ -1116,6 +1133,9 @@ h1 {
   font-size: 0.9em;
   line-height: 2em;
   text-align: justify;
+  background: linear-gradient(45deg, #fdeae8 50%, white 50%);
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 .workshop .workShop_content .workShop_text:after {
