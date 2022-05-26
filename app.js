@@ -8,11 +8,11 @@ burgerMenu.addEventListener("click", function () {
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");
 
-  /*tl.from("li", {
+  tl.from("li", {
     y: 40,
     opacity: 0,
     stagger: 0.2,
-  });*/
+  });
 });
 
 //

@@ -99,6 +99,7 @@ nav {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
   }
 
   li {
@@ -159,9 +160,8 @@ nav {
   .hideLogo {
     width: 110px;
   }
-  nav {
-    h2 {
-      display: none;
-    }
+
+  .hideMenu {
+    display: none;
   }
 }
