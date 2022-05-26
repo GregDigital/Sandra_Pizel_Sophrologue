@@ -3,7 +3,7 @@ let overlay = document.getElementById("menu");
 let body = document.querySelector("body");
 let tl = gsap.timeline();
 
-burgerMenu.addEventListener("click", function (e) {
+burgerMenu.addEventListener("click", function () {
   this.classList.toggle("active");
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");

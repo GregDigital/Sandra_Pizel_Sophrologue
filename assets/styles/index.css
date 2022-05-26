@@ -1341,7 +1341,7 @@ footer {
   position: relative;
   background: #fdeae8;
   width: 100%;
-  height: 10em;
+  height: 12em;
 }
 
 footer .content_logo {
@@ -1381,6 +1381,18 @@ footer .follow .fa-brands {
   right: 50px;
   color: #ad6c6c;
   font-size: 1.5em;
+}
+
+footer .mention {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  bottom: 16px;
+  left: 50%;
+  -webkit-transform: translate(-62%, 12px);
+          transform: translate(-62%, 12px);
 }
 
 @media only screen and (max-width: 480px) {
