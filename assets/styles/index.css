@@ -518,8 +518,6 @@ h1 {
   }
   header {
     position: relative;
-    z-index: 0;
-    width: 50%;
   }
   .homepage {
     display: block;

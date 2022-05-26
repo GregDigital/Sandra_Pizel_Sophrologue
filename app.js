@@ -3,16 +3,22 @@ let overlay = document.getElementById("menu");
 let body = document.querySelector("body");
 let tl = gsap.timeline();
 
-burgerMenu.addEventListener("click", function () {
+burgerMenu.addEventListener("click", function (e) {
   this.classList.toggle("active");
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");
 
-  tl.from("li", {
-    y: 40,
-    opacity: 0,
-    stagger: 0.2,
-  });
+  if (this.classList.contains("active")) {
+    tl.from("li", {
+      y: 40,
+      opacity: 0,
+      stagger: 0.2,
+    });
+  } else {
+    tl.from("li", {
+      opacity: 1,
+    });
+  }
 });
 
 //
