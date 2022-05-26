@@ -87,7 +87,7 @@ nav {
     // opacity: 1;
     //padding-top: 100px;
     //transform: translateX(0);
-    background: $pinklight;
+    background: linear-gradient(292deg, #fdeae8 50%, white 50%);
     height: 100vh;
     width: 100vw;
     //box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
@@ -123,6 +123,20 @@ nav {
   }
 }
 
+.logoBurger {
+  position: absolute;
+  left: 0;
+}
+.titleBurger {
+  color: #ad6c6c;
+  font-family: "MonteCarlo", cursive;
+  font-size: 2.6em;
+  font-weight: 100;
+  position: absolute;
+  right: 50%;
+  top: 0px;
+  transform: translate(50px, 50%);
+}
 .circle {
   border-radius: 50%;
   margin: 10px;
@@ -163,5 +177,15 @@ nav {
 
   .hideMenu {
     display: none;
+  }
+
+  .logoBurger {
+    position: absolute;
+    left: 0;
+    width: 110px;
+  }
+
+  .titleBurger {
+    font-size: 2.2em;
   }
 }

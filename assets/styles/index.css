@@ -213,7 +213,7 @@ nav {
 #menu.overlay {
   visibility: visible;
   display: block;
-  background: #fdeae8;
+  background: linear-gradient(292deg, #fdeae8 50%, white 50%);
   height: 100vh;
   width: 100vw;
 }
@@ -247,6 +247,23 @@ nav {
   color: #ad6c6c;
   font-size: 0.5em;
   margin-right: 0.8em;
+}
+
+.logoBurger {
+  position: absolute;
+  left: 0;
+}
+
+.titleBurger {
+  color: #ad6c6c;
+  font-family: "MonteCarlo", cursive;
+  font-size: 2.6em;
+  font-weight: 100;
+  position: absolute;
+  right: 50%;
+  top: 0px;
+  -webkit-transform: translate(50px, 50%);
+          transform: translate(50px, 50%);
 }
 
 .circle {
@@ -315,6 +332,14 @@ nav {
   }
   .hideMenu {
     display: none;
+  }
+  .logoBurger {
+    position: absolute;
+    left: 0;
+    width: 110px;
+  }
+  .titleBurger {
+    font-size: 2.2em;
   }
 }
 
