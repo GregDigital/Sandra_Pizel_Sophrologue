@@ -23,7 +23,7 @@ for (let i = 0; i < menu.length; i++) {
   const el = menu[i];
   el.addEventListener("click", function () {
     overlay.classList.toggle("overlay");
-    burgerMenu.classList.toggle("on");
+    burgerMenu.classList.toggle("active");
     body.classList.toggle("true");
 
     tl.from("li", {
@@ -33,7 +33,7 @@ for (let i = 0; i < menu.length; i++) {
 }
 
 // hide logo while scrolling
-/*
+
 let lastScroll = 20;
 let logo = document.querySelector(".hideLogo");
 let h2 = document.querySelector(".hideMenu");
@@ -49,7 +49,7 @@ window.addEventListener("scroll", () => {
   // transmet la position quand le scroll est terminé
   return lastScroll;
 });
-*/
+
 // Custom cursor
 
 const cursor = document.querySelector(".cursor");
