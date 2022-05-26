@@ -16,23 +16,57 @@ header {
 
 nav {
   display: flex;
-  margin: 1em;
   position: relative;
   z-index: 3;
+}
+.hideMenu {
+  color: $titlecolor;
+  font-family: $font1;
+  font-size: 2.5rem;
+  font-weight: 100;
+  position: fixed;
+  right: 107px;
+  top: 12px;
+  z-index: 4;
+}
 
-  h2 {
-    color: $titlecolor;
-    font-family: $font1;
-    font-size: 2.5rem;
-    font-weight: 100;
-    margin-right: 0.5em;
+.menu_toggle {
+  height: 50px;
+  position: fixed;
+  right: 25px;
+  top: 25px;
+  width: 50px;
+  z-index: 4;
+  border-radius: 81px;
+  border: solid 3px #ad6c6c;
+  padding: 4px;
+}
+.active {
+  .oneRod {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .twoRod {
+    opacity: 0;
+  }
+  .threeRod {
+    transform: rotate(-45deg) translate(5px, -6px);
   }
 }
 
+.oneRod,
+.twoRod,
+.threeRod {
+  background: $titlecolor;
+  transition-duration: 0.3s;
+  width: 25px;
+  height: 3px;
+  margin: 6px;
+  backface-visibility: hidden;
+}
 #menu {
   z-index: 1;
- // min-width: 100%;
- // min-height: 100%;
+  // min-width: 100%;
+  // min-height: 100%;
   position: fixed;
   top: 0;
   //height: 0;
@@ -50,12 +84,12 @@ nav {
   &.overlay {
     visibility: visible;
     display: block;
-   // opacity: 1;
+    // opacity: 1;
     //padding-top: 100px;
     //transform: translateX(0);
     background: $pinklight;
     height: 100vh;
-width: 100vw;
+    width: 100vw;
     //box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
   }
 
@@ -119,60 +153,6 @@ width: 100vw;
 
 .true {
   overflow: hidden;
-}
-
-.container {
-  cursor: pointer;
-  display: flex;
-}
-svg {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.active svg {
-  transform: rotate(90deg);
-}
-path {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-path:nth-child(1) {
-  transform-origin: 36% 40%;
-}
-path:nth-child(2) {
-  stroke-dasharray: 29 299;
-}
-path:nth-child(3) {
-  transform-origin: 35% 63%;
-}
-path:nth-child(4) {
-  stroke-dasharray: 29 299;
-}
-path:nth-child(5) {
-  transform-origin: 61% 52%;
-}
-path:nth-child(6) {
-  transform-origin: 62% 52%;
-}
-.active path:nth-child(1) {
-  transform: translateX(9px) translateY(1px) rotate(45deg);
-}
-.active path:nth-child(2) {
-  stroke-dasharray: 225 299;
-  stroke-dashoffset: -72px;
-}
-.active path:nth-child(3) {
-  transform: translateX(9px) translateY(1px) rotate(-45deg);
-}
-.active path:nth-child(4) {
-  stroke-dasharray: 225 299;
-  stroke-dashoffset: -72px;
-}
-.active path:nth-child(5) {
-  transform: translateX(9px) translateY(1px) rotate(-45deg);
-}
-.active path:nth-child(6) {
-  transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
 @media only screen and (max-width: 480px) {

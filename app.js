@@ -1,4 +1,4 @@
-let burgerMenu = document.querySelector(".container");
+let burgerMenu = document.querySelector(".menu_toggle");
 let overlay = document.getElementById("menu");
 let body = document.querySelector("body");
 let tl = gsap.timeline();
@@ -7,6 +7,7 @@ burgerMenu.addEventListener("click", function () {
   this.classList.toggle("active");
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");
+
   /*tl.from("li", {
     y: 40,
     opacity: 0,
@@ -22,7 +23,7 @@ for (let i = 0; i < menu.length; i++) {
   const el = menu[i];
   el.addEventListener("click", function () {
     overlay.classList.toggle("overlay");
-    burgerMenu.classList.toggle("active");
+    burgerMenu.classList.toggle("on");
     body.classList.toggle("true");
 
     tl.from("li", {
