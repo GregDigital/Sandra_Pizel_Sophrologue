@@ -1,0 +1,32 @@
+.mentions_legales {
+  margin: 5em;
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .description_mentions {
+    border: solid 4px #fdeae8;
+    height: auto;
+    border-radius: 2em;
+    margin-top: 2em;
+    padding: 1.5em;
+
+    p {
+      font-size: 1.2em;
+      color: $grey;
+      margin-bottom: 1em;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: $titlecolor;
+      margin-bottom: 1em;
+    }
+    .p_mentions {
+      font-size: 1em;
+      color: $grey;
+      margin-bottom: 1em;
+      line-height: 1.5em;
+    }
+  }
+}

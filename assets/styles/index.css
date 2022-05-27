@@ -1414,4 +1414,40 @@ footer .mention {
     right: 20px;
   }
 }
+
+.mentions_legales {
+  margin: 5em;
+}
+
+.mentions_legales h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.mentions_legales .description_mentions {
+  border: solid 4px #fdeae8;
+  height: auto;
+  border-radius: 2em;
+  margin-top: 2em;
+  padding: 1.5em;
+}
+
+.mentions_legales .description_mentions p {
+  font-size: 1.2em;
+  color: #b6b6b6;
+  margin-bottom: 1em;
+}
+
+.mentions_legales .description_mentions h2 {
+  font-size: 1.3em;
+  color: #ad6c6c;
+  margin-bottom: 1em;
+}
+
+.mentions_legales .description_mentions .p_mentions {
+  font-size: 1em;
+  color: #b6b6b6;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
 /*# sourceMappingURL=index.css.map */
