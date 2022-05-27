@@ -43,8 +43,16 @@ footer {
     position: absolute;
     display: block;
     bottom: 16px;
-    left: 50%;
-    transform: translate(-62%, 12px);
+    right: 46px;
+  }
+  .copyright {
+    font-family: $font2;
+    font-size: 0.9em;
+    text-decoration: none;
+    position: absolute;
+    display: block;
+    bottom: 16px;
+    left: 46px;
   }
 }
 
