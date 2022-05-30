@@ -1,4 +1,5 @@
 #life{
+  display: block;
   margin-top: 4em;
   background-attachment: fixed;
   background-image: url(../img/life.jpeg);
@@ -69,6 +70,11 @@ opacity: 0.7;
 }
 
 @media only screen and (max-width: 900px) {
+  #life{
+    display: none;
+  
+  }
+
   .workshop {
     h1 {
       height: auto;
