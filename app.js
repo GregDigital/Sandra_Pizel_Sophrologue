@@ -61,16 +61,18 @@ window.addEventListener("scroll", () => {
 const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", (e) => {
-  cursor.setAttribute(
-    "style",
-    "top:" + (e.pageY - 20) + "px; left:" + (e.pageX - 20) + "px;"
-  );
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
 });
 
-document.addEventListener("click", (e) => {
-  cursor.classList.add("pulse");
-
-  setTimeout(() => {
-    cursor.classList.remove("pulse");
-  }, 500);
+document.addEventListener("mouseover", (e) => {
+  let pulse = document.querySelectorAll(".pointer");
+  pulse.forEach((elt) => {
+    if (e.target == elt) {
+      cursor.classList.add("pulse");
+    } else if (e.relatedTarget == elt) {
+      cursor.classList.remove("pulse");
+    }
+  });
+  return;
 });

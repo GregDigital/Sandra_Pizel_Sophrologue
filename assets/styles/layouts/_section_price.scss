@@ -1,16 +1,9 @@
 .price {
   position: relative;
-  /*
-  .background_price::before {
-    content: "";
-    background: #fdeae8;
-    display: block;
-    width: 26rem;
-    height: 4rem;
-    position: absolute;
-    border-radius: 2rem;
-    left: 20px;
-  }*/
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+
   .paragraphe_price {
     position: relative;
     font-size: 0.9em;
@@ -25,10 +18,10 @@
     &::after {
       content: "";
       width: 3em;
-      height: 0.3em;
+      height: 5px;
       position: absolute;
       background: #ad6c6c;
-      left: 3.2rem;
+      left: 1em;
       bottom: -6px;
       padding-left: 2.2em;
     }

@@ -93,8 +93,9 @@
   cursor: pointer;
   margin-top: 12%;
   padding-bottom: 5px;
+  transition: all 0.8s;
   &:hover {
-    background: linear-gradient(to right, $pinklight 100%);
+    background: $pinklight;
   }
 }
 

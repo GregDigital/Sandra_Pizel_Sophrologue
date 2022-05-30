@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<meta name="viewport" content="width=device-width" />-->
+
     <meta
       property="og:title"
       content="Sandra Pizel - Sophrologue Côte-Basque"
@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <div class="cursor"></div>
     <header>
       <img
         class="hideLogo"
@@ -26,7 +27,7 @@
       />
 
       <h2 class="hideMenu">Menu</h2>
-      <div class="menu_toggle">
+      <div class="menu_toggle pointer">
         <div class="oneRod"></div>
         <div class="twoRod"></div>
         <div class="threeRod"></div>
@@ -41,22 +42,28 @@
         />
         <ul>
           <li class="menu_item">
-            <a href="/#accueil"><span>#01</span>Accueil</a>
+            <a class="pointer" href="/#accueil"><span>#01</span>Accueil</a>
           </li>
           <li class="menu_item">
-            <a href="/#ensemble"><span>#02</span>Ensemble vers le positif</a>
+            <a class="pointer" href="/#ensemble"
+              ><span>#02</span>Ensemble vers le positif</a
+            >
           </li>
           <li class="menu_item">
-            <a href="/#qui_suis_je"><span>#03</span>Qui suis-je ?</a>
+            <a class="pointer" href="/#qui_suis_je"
+              ><span>#03</span>Qui suis-je ?</a
+            >
           </li>
           <li class="menu_item">
-            <a href="/#tarifs"><span>#04</span>Mes tarifs</a>
+            <a class="pointer" href="/#tarifs"><span>#04</span>Mes tarifs</a>
           </li>
           <li class="menu_item">
-            <a href="/#atelier"><span>#05</span>Les ateliers</a>
+            <a class="pointer" href="/#atelier"><span>#05</span>Les ateliers</a>
           </li>
           <li class="menu_item">
-            <a href="/#contact"><span>#06</span>Et si on prenait contact ?</a>
+            <a class="pointer" href="/#contact"
+              ><span>#06</span>Et si on prenait contact ?</a
+            >
           </li>
         </ul>
       </nav>
@@ -88,7 +95,7 @@
             vous êtes.
           </p>
           <a href="/#contact"
-            ><button type="button" class="btn_accueil">
+            ><button type="button" class="btn_accueil pointer">
               Et si on prenait contact ?
             </button></a
           >
@@ -325,23 +332,21 @@
     <footer>
       <div class="content_logo">
         <span class="span_road">En route</span>
-        <a href="/#accueil"
+        <a href="#accueil"
           ><img src="./assets/img/logo.png" alt="logo Sandra Pizel"
         /></a>
         <span class="span_positif">vers le positif</span>
       </div>
       <div class="follow">
-        <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+        <a class="pointer" href="#"> <i class="fa-brands fa-facebook"></i></a>
       </div>
 
       <span class="copyright">© Sandra Pizel 2022</span>
 
-      <a href="./pages/mentions_legales.html"
+      <a class="pointer" href="./pages/mentions_legales.html"
         ><span class="mention">Mentions légales</span></a
       >
     </footer>
-
-    <div class="cursor"></div>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"

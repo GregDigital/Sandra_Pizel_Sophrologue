@@ -1,5 +1,8 @@
 .together {
   //height: 100vh;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 
   .description {
     display: flex;
@@ -40,7 +43,7 @@
     height: 5px;
     position: absolute;
     background: #ad6c6c;
-    left: 3.2rem;
+    left: 1em;
     bottom: -15px;
   }
 }
