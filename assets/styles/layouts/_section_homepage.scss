@@ -117,12 +117,13 @@ h1 {
 }
 #frame_top {
   display: block;
-  z-index: 1;
+  z-index: -1;
   position: fixed;
   top: 20%;
   right: 10%;
 }
 #frame_right {
+  z-index: -1;
   display: block;
   position: fixed;
   bottom: 20%;
@@ -135,6 +136,7 @@ h1 {
   left: 40%;
 }
 #frame_left {
+  z-index: -1;
   display: block;
   position: fixed;
   bottom: 10%;
