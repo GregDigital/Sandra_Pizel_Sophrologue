@@ -708,7 +708,7 @@ h1 {
   background-size: contain;
   width: 46%;
   height: 94px;
-  position: absolute;
+  position: relative;
   left: 10px;
   bottom: 10px;
 }
@@ -872,6 +872,7 @@ h1 {
   font-size: 1.2em;
   color: #ad6c6c;
   text-align: center;
+  margin-top: 4em;
 }
 
 .price_content {
@@ -1076,7 +1077,7 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .workshop {
