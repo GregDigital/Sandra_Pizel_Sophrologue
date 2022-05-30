@@ -116,12 +116,14 @@ h1 {
   margin: 4rem 0 3rem;
 }
 #frame_top {
+  display: block;
   z-index: 1;
   position: fixed;
   top: 20%;
   right: 10%;
 }
 #frame_right {
+  display: block;
   position: fixed;
   bottom: 20%;
   right: 20%;
@@ -133,6 +135,7 @@ h1 {
   left: 40%;
 }
 #frame_left {
+  display: block;
   position: fixed;
   bottom: 10%;
   left: 10%;
@@ -162,6 +165,18 @@ h1 {
   }
 }
 @media only screen and (max-width: 900px) {
+  #frame_top {
+    display: none;
+  }
+  #frame_right {
+    display: none;
+  }
+  #frame_bottom {
+    z-index: 0;
+  }
+  #frame_left {
+    display: none;
+  }
   h1 {
     margin-bottom: 1em;
   }
