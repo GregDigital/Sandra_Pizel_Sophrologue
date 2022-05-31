@@ -102,6 +102,10 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}
 @media only screen and (max-width: 900px) {
   .contact {
     h1 {
