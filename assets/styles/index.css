@@ -1309,9 +1309,11 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
-input[type="text"]:focus,
-textarea:focus {
+input[type="text"] {
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 @media only screen and (max-width: 900px) {
