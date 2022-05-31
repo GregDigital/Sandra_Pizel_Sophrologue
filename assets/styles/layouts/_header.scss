@@ -37,6 +37,9 @@ nav {
   top: 25px;
   width: 50px;
   z-index: 999;
+  border-radius: 81px;
+  border: solid 2px #ad6c6c;
+  padding: 5px;
 }
 .active {
   .oneRod {
@@ -62,32 +65,16 @@ nav {
 }
 #menu {
   z-index: 10;
-  // min-width: 100%;
-  // min-height: 100%;
   position: fixed;
   top: 0;
-  //height: 0;
-  visibility: hidden;
-  //opacity: 0;
   text-align: center;
-  //padding-top: 20px;
   display: none;
-  // transition: all 0.6s ease-in-out;
-  //transform: translateX(100%);
-  /*
-  border-radius: 70% 0% 0% 0%;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;*/
 
   &.overlay {
-    visibility: visible;
     display: block;
-    // opacity: 1;
-    //padding-top: 100px;
-    //transform: translateX(0);
     background: linear-gradient(292deg, #fdeae8 50%, white 50%);
     height: 100vh;
     width: 100vw;
-    //box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
   }
 
   ul {
@@ -120,10 +107,6 @@ nav {
   }
 }
 
-.logoBurger {
-  position: absolute;
-  left: 0;
-}
 .titleBurger {
   color: #ad6c6c;
   font-family: "MonteCarlo", cursive;
