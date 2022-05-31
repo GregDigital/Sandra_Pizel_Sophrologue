@@ -29,6 +29,7 @@ for (let i = 0; i < menu.length; i++) {
 // hide logo while scrolling
 
 let lastScroll = 20;
+let largeur = window.innerWidth;
 let logo = document.querySelector(".hideLogo");
 let h2 = document.querySelector(".hideMenu");
 

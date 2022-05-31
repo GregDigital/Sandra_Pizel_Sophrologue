@@ -167,8 +167,11 @@ nav {
   position: fixed;
   right: 25px;
   top: 25px;
-  width: 42px;
+  width: 50px;
   z-index: 999;
+  border-radius: 81px;
+  border: solid 2px #ad6c6c;
+  padding: 5px;
 }
 
 .active .oneRod {
@@ -191,7 +194,7 @@ nav {
   background: #ad6c6c;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
-  width: 100%;
+  width: 25px;
   height: 3px;
   margin: 6px;
   -webkit-backface-visibility: hidden;
