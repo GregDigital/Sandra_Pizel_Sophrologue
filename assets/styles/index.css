@@ -169,9 +169,6 @@ nav {
   top: 25px;
   width: 50px;
   z-index: 999;
-  border-radius: 81px;
-  border: solid 2px #ad6c6c;
-  padding: 5px;
 }
 
 .active .oneRod {
