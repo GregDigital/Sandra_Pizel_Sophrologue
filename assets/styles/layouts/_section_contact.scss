@@ -25,6 +25,7 @@
   }
   p {
     color: $grey;
+    text-decoration: none;
   }
   .mobile {
     margin-bottom: 1em;
@@ -102,7 +103,8 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
   outline: none;
   appearance: none;
 }

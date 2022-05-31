@@ -1225,6 +1225,7 @@ h1 {
 
 .contact p {
   color: #b6b6b6;
+  text-decoration: none;
 }
 
 .contact .mobile {
@@ -1309,7 +1310,8 @@ textarea {
   outline: 5px solid #e2ab9a;
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
   outline: none;
   -webkit-appearance: none;
      -moz-appearance: none;
