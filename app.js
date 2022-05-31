@@ -7,18 +7,6 @@ burgerMenu.addEventListener("click", function () {
   this.classList.toggle("active");
   overlay.classList.toggle("overlay");
   body.classList.toggle("true");
-
-  if (this.classList.contains("active")) {
-    tl.from("li", {
-      y: 40,
-      opacity: 0,
-      stagger: 0.2,
-    });
-  } else {
-    tl.from("li", {
-      opacity: 1,
-    });
-  }
 });
 
 //
