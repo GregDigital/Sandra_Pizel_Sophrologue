@@ -520,7 +520,7 @@ h1 {
     display: none;
   }
   #frame_bottom {
-    z-index: 0;
+    display: none;
   }
   #frame_left {
     display: none;
