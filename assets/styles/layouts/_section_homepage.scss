@@ -40,7 +40,7 @@
     transform: translateY(30px);
   }
   img:nth-child(1) {
-    animation: appear 0.8s 0.2s ease-out forwards;
+    animation: appear 0.5s ease-out forwards;
   }
 }
 
@@ -56,7 +56,7 @@
     flex-direction: column;
     opacity: 0;
     transform: translateY(30px);
-    animation: appear 1s 1s ease-out forwards;
+    animation: appear 0.6s ease-out forwards;
 
     p {
       background: linear-gradient(50deg, #fdeae8 50%, white 50%);
@@ -195,6 +195,18 @@ h1 {
   }
   .container_img {
     display: none;
+    img {
+      display: none;
+    }
+    img:nth-child(1) {
+      animation: appear 0s 0s ease-out forwards;
+    }
+    img:nth-child(2) {
+      animation: appear 0s 0s ease-out forwards;
+    }
+    img:nth-child(3) {
+      animation: appear 0s 0s ease-out forwards;
+    }
   }
   .container_intro {
     width: 90%;
