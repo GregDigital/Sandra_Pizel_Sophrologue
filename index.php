@@ -345,7 +345,7 @@
       <div class="title_form">une question ?</div>
       <article class="form">
         
-        <form action="valid.php" method="POST" >
+        <form method="POST" action="valid.php">
           <input
             name="last"
             id="last"
