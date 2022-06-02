@@ -24,8 +24,8 @@ if(isset($_POST['envoyer'])) {
                     //on renseigne les entêtes de la fonction mail de PHP
                     $Entetes = "MIME-Version: 1.0\r\n";
                     $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
-                    $Entetes .= "From: Nom de votre site <".$_POST['mail'].">\r\n";//de préférence une adresse avec le même domaine de là où, vous utilisez ce code, cela permet un envoie quasi certain jusqu'au destinataire
-                    $Entetes .= "Reply-To: Nom de votre site <".$_POST['mail'].">\r\n";
+                    $Entetes .= "From: leafy-lokum-3b17c6 <".$_POST['email'].">\r\n";//de préférence une adresse avec le même domaine de là où, vous utilisez ce code, cela permet un envoie quasi certain jusqu'au destinataire
+                    $Entetes .= "Reply-To: leafy-lokum-3b17c6 <".$_POST['email'].">\r\n";
                     //on prépare les champs:
                     $Mail=$_POST['email']; 
                     $Sujet='=?UTF-8?B?'.base64_encode($_POST['first']).'?=';//Cet encodage (base64_encode) est fait pour permettre aux informations binaires d'être manipulées par les systèmes qui ne gèrent pas correctement les 8 bits (=?UTF-8?B? est une norme afin de transmettre correctement les caractères de la chaine)
