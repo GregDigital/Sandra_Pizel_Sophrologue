@@ -1,35 +1,44 @@
-<?php 
-
-
-
-if (isset($_POST['valider'])) {
-    // Controle des champs si javascript est desactive
-    $err = '';
-    if ($_POST['last'] == "") {
-        $err.= "Veuillez indiquer votre nom !";
-    } elseif ($_POST['email'] == "") {
-        $err.= "Veuillez indiquer votre email !";
-    } 
-    // Traitement des donnees du formulaire
-    if ($err == "") {
-        // Enregistrement en BDD (si besoin)
-       // Insérer votre requête à cet endroit
-        
-        // Envoi du mail
-        $sujet = "Mail depuis mon site";
-        $msg_texte = "Votre texte<br /><br />";
-        $msg_texte.= "E-mail : ".$_POST['email']."<br /><br />";
-        $msg_texte.= "Nom : ".$_POST['last'];
-        $entete = "Reply-to: http://127.0.0.1:5501/";
-        $entete.= "From: Mon site <http://127.0.0.1:5501/>";
-        $entete.= "MIME-Version: 1.0";
-        $entete.= "Content-Type:text/html; charset=utf-8;";
-        $send = mail("gdossantos.pro@gmail.com", $sujet, $msg_texte, $entete);
-        // Tag pour afficher le bon envoi du formulaire
-        $ok = true;
+<?php
+/* Page: contact.php */
+//mettez ici votre adresse mail
+$VotreAdresseMail="gdossantos.pro@gmail.com";
+// si le bouton "Envoyer" est cliqué
+if(isset($_POST['envoyer'])) {
+    //on vérifie que le champ mail est correctement rempli
+    if(empty($_POST['email'])) {
+        echo "Le champ mail est vide";
+    } else {
+        //on vérifie que l'adresse est correcte
+        if(!preg_match("#^[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?@[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?\.[a-z]{2,}$#i",$_POST['mail'])){
+            echo "L'adresse mail entrée est incorrecte";
+        }else{
+            //on vérifie que le champ sujet est correctement rempli
+            if(empty($_POST['first'])) {
+                echo "Le champ sujet est vide";
+            }else{
+                //on vérifie que le champ message n'est pas vide
+                if(empty($_POST['last'])) {
+                    echo "Le champ message est vide";
+                }else{
+                    //tout est correctement renseigné, on envoi le mail
+                    //on renseigne les entêtes de la fonction mail de PHP
+                    $Entetes = "MIME-Version: 1.0\r\n";
+                    $Entetes .= "Content-type: text/html; charset=UTF-8\r\n";
+                    $Entetes .= "From: Nom de votre site <".$_POST['mail'].">\r\n";//de préférence une adresse avec le même domaine de là où, vous utilisez ce code, cela permet un envoie quasi certain jusqu'au destinataire
+                    $Entetes .= "Reply-To: Nom de votre site <".$_POST['mail'].">\r\n";
+                    //on prépare les champs:
+                    $Mail=$_POST['email']; 
+                    $Sujet='=?UTF-8?B?'.base64_encode($_POST['first']).'?=';//Cet encodage (base64_encode) est fait pour permettre aux informations binaires d'être manipulées par les systèmes qui ne gèrent pas correctement les 8 bits (=?UTF-8?B? est une norme afin de transmettre correctement les caractères de la chaine)
+                    $Message=htmlentities($_POST['last'],ENT_QUOTES,"UTF-8");//htmlentities() converti tous les accents en entités HTML, ENT_QUOTES Convertit en + les guillemets doubles et les guillemets simples, en entités HTML
+                    //en fin, on envoi le mail
+                    if(mail($VotreAdresseMail,$Sujet,nl2br($Message),$Entetes)){//la fonction nl2br permet de conserver les sauts de ligne et la fonction base64_encode de conserver les accents dans le titre
+                        echo "Le mail à été envoyé avec succès!";
+                    } else {
+                        echo "Une erreur est survenue, le mail n'a pas été envoyé";
+                    }
+                }
+            }
+        }
     }
 }
-
-
-?>
-
+    ?>
