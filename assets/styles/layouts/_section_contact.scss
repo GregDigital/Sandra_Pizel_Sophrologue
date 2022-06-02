@@ -108,6 +108,14 @@ textarea {
   outline: none;
   appearance: none;
 }
+
+.error {
+  display: none;
+  color: rgb(190, 57, 57);
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 15px;
+}
 @media only screen and (max-width: 900px) {
   .contact {
     h1 {

@@ -344,14 +344,18 @@
       </article>
       <div class="title_form">une question ?</div>
       <article class="form">
-        <form method="post" action="traitement.php">
+        
+        <form action="./valid.php" method="POST" >
           <input
-            name="name"
-            id="name"
+            name="last"
+            id="last"
             type="text"
             class="feedback-input"
             placeholder="Quel est votre nom ?"
           />
+          <span class="error"
+            >Veuillez renseigner un prénom valide, 2 caractéres minimum</span
+          >
           <input
             name="first"
             id="first"
@@ -359,6 +363,10 @@
             class="feedback-input"
             placeholder="Quel est votre prénom ?"
           />
+          <span class="error"
+          >Veuillez renseigner un nom valide, 2 caractéres minimum</span
+        >
+        
           <input
             name="email"
             id="email"
@@ -366,14 +374,20 @@
             class="feedback-input"
             placeholder="Quel est votre adresse mail ?"
           />
-          <textarea
+          <span class="error"
+          >Veuillez renseigner une adresse mail valide</span
+        >
+        <input
+          
             name="precision"
             id="precision"
             class="feedback-input"
             placeholder="Écrivez votre message"
           ></textarea>
-          <input type="submit" value="Envoyer" />
+
+          <input type="submit" name="valider" value="Envoyer" />
         </form>
+        
       </article>
     </section>
     <footer>

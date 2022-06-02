@@ -1333,6 +1333,14 @@ textarea {
           appearance: none;
 }
 
+.error {
+  display: none;
+  color: #be3939;
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 900px) {
   .contact h1 {
     width: 90%;

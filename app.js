@@ -76,3 +76,36 @@ document.addEventListener("mouseover", (e) => {
   });
   return;
 });
+
+//form contact
+
+function VerifForm(form) {
+  let lastName = document.querySelector("#last").lastName.value;
+  console.log(lastName);
+  const firstName = document.querySelector("#first").first.value;
+  const mail = document.querySelector("#email").email.value;
+  const text = document.querySelector("#precision");
+  const msg_error = document.querySelector(".error");
+
+  if (lastName == "") {
+    document.getElementById("msg_erreur").innerHTML =
+      "Veuillez indiquer votre nom !";
+    document.getElementById("msg_erreur").style.display = "block";
+    document.getElementById("msg_erreur").className = "focus";
+    return false;
+  } else {
+    document.getElementById("msg_erreur").style.display = "none";
+  }
+  if (mail == "") {
+    document.getElementById("msg_erreur").innerHTML =
+      "Veuillez indiquer votre e-mail !";
+    document.getElementById("msg_erreur").style.display = "block";
+    document.getElementById("msg_erreur").className = "focus";
+
+    return false;
+  } else {
+    document.getElementById("msg_erreur").style.display = "none";
+  }
+
+  return true;
+}
