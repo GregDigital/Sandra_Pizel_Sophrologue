@@ -109,11 +109,13 @@ textarea {
   appearance: none;
 }
 
-.button-area span {
-  font-size: 1em;
-  text-align: center;
-  margin-top: 15px;
-  display: none;
+.button-area {
+  span {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+  }
 }
 @media only screen and (max-width: 900px) {
   .contact {
