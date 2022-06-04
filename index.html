@@ -7,15 +7,15 @@
 
     <meta
       property="og:title"
-      content="Sandra Pizel | Sophrologue à Anglet | Pays Basque"
+      content="Sandra Pizel - Sophrologue à Anglet, Pays Basque"
     />
-    <link rel="shortcut icon" href="assets/img/logo.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="logo.svg" />
+    <link rel="shortcut icon" href="./assets/img/logo.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/logo.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <title>
-      Sandra Pizel - Sophrologue à Anglet - Pays Basque - Ensemble vers le
+      Sandra Pizel - Sophrologue à Anglet, Pays Basque - Ensemble vers le
       positif
     </title>
     
@@ -64,7 +64,7 @@
             <a
               class="pointer"
               title="aller à la section 1 accueil"
-              href="/#accueil"
+              href="#accueil"
               ><span>#01</span>Accueil</a
             >
           </li>
@@ -72,7 +72,7 @@
             <a
               class="pointer"
               title="aller à la section 2 ensemble vers le positif"
-              href="/#ensemble"
+              href="#ensemble"
               ><span>#02</span>Ensemble vers le positif</a
             >
           </li>
@@ -80,7 +80,7 @@
             <a
               class="pointer"
               title="aller à la section 3 qui-suis je"
-              href="/#qui_suis_je"
+              href="#qui_suis_je"
               ><span>#03</span>Qui suis-je ?</a
             >
           </li>
@@ -88,7 +88,7 @@
             <a
               class="pointer"
               title="aller à la section 4 mes tarifs"
-              href="/#tarifs"
+              href="#tarifs"
               ><span>#04</span>Mes tarifs</a
             >
           </li>
@@ -96,7 +96,7 @@
             <a
               class="pointer"
               title="aller à la section 5 les ateliers"
-              href="/#atelier"
+              href="#atelier"
               ><span>#05</span>Les ateliers</a
             >
           </li>
@@ -104,7 +104,7 @@
             <a
               class="pointer"
               title="aller à la section 6 contact"
-              href="/#contact"
+              href="#contact"
               ><span>#06</span>Et si on prenait contact ?</a
             >
           </li>
@@ -112,7 +112,7 @@
       </nav>
     </header>
     <!--Section page d'accueil-->
-    <section id="/accueil" class="homepage">
+    <section id="accueil" class="homepage">
       <article class="container_img">
         <img src="./assets/img/pissenlit_one.png" alt="photo pissenlit" />
         <img src="./assets/img/pissenlit_two.png" alt="photo pissenlit" />
@@ -137,7 +137,7 @@
             confiance en vous et pour laisser s’exprimer la belle personne que
             vous êtes.
           </p>
-          <a href="/#contact" title="aller à la section 6 contact"
+          <a href="#contact" title="aller à la section 6 contact"
             ><button type="button" class="btn_accueil pointer">
               Et si on prenait contact ?
             </button></a
@@ -346,27 +346,23 @@
       <div class="title_form">une question ?</div>
       <article class="form">
         
-        <form method="POST" action="mail.php">
+        <form action="#">
           <input
-            name="last"
-            id="last"
+            name="name"
+            id="name"
             type="text"
             class="feedback-input"
             placeholder="Quel est votre nom ?"
           />
-          <span class="error"
-            >Veuillez renseigner un prénom valide, 2 caractéres minimum</span
-          >
+       
           <input
-            name="first"
-            id="first"
+            name="prenom"
+            id="prenom"
             type="text"
             class="feedback-input"
             placeholder="Quel est votre prénom ?"
           />
-          <span class="error"
-          >Veuillez renseigner un nom valide, 2 caractéres minimum</span
-        >
+     
         
           <input
             name="email"
@@ -375,18 +371,19 @@
             class="feedback-input"
             placeholder="Quel est votre adresse mail ?"
           />
-          <span class="error"
-          >Veuillez renseigner une adresse mail valide</span
-        >
+       
         <input
           
-            name="precision"
-            id="precision"
+            name="message"
+            id="message"
             class="feedback-input"
             placeholder="Écrivez votre message"
           ></textarea>
-
+         <div class="button-area">
           <input type="submit" name="envoyer" value="Envoyer" />
+          <span></span>
+        </div>
+
         </form>
    
         <div class="conteneur"></div>
@@ -395,7 +392,7 @@
     <footer>
       <div class="content_logo">
         <span class="span_road">En route</span>
-        <a href="/#accueil" title="aller à la section 1 à l'accueil"
+        <a href="#" title="aller à la section 1 à l'accueil"
           ><img src="./assets/img/logo.png" alt="logo Sandra Pizel"
         /></a>
         <span class="span_positif">vers le positif</span>

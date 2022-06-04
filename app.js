@@ -79,33 +79,35 @@ document.addEventListener("mouseover", (e) => {
 
 //form contact
 
-function VerifForm(form) {
-  let lastName = document.querySelector("#last").lastName.value;
-  console.log(lastName);
-  const firstName = document.querySelector("#first").first.value;
-  const mail = document.querySelector("#email").email.value;
-  const text = document.querySelector("#precision");
-  const msg_error = document.querySelector(".error");
-
-  if (lastName == "") {
-    document.getElementById("msg_erreur").innerHTML =
-      "Veuillez indiquer votre nom !";
-    document.getElementById("msg_erreur").style.display = "block";
-    document.getElementById("msg_erreur").className = "focus";
-    return false;
-  } else {
-    document.getElementById("msg_erreur").style.display = "none";
-  }
-  if (mail == "") {
-    document.getElementById("msg_erreur").innerHTML =
-      "Veuillez indiquer votre e-mail !";
-    document.getElementById("msg_erreur").style.display = "block";
-    document.getElementById("msg_erreur").className = "focus";
-
-    return false;
-  } else {
-    document.getElementById("msg_erreur").style.display = "none";
-  }
-
-  return true;
-}
+const form = document.querySelector("form"),
+  statusTxt = form.querySelector(".button-area span");
+form.onsubmit = (e) => {
+  e.preventDefault();
+  statusTxt.style.color = "#ad6c6c";
+  statusTxt.style.display = "block";
+  statusTxt.innerText = "Envoi de votre message...";
+  form.classList.add("disabled");
+  let xhr = new XMLHttpRequest();
+  xhr.open("POST", "mail.php", true);
+  xhr.onload = () => {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      let response = xhr.response;
+      if (
+        response.indexOf("required") != -1 ||
+        response.indexOf("valid") != -1 ||
+        response.indexOf("failed") != -1
+      ) {
+        statusTxt.style.color = "rgb(190, 57, 57)";
+      } else {
+        form.reset();
+        setTimeout(() => {
+          statusTxt.style.display = "none";
+        }, 2000);
+      }
+      statusTxt.innerText = response;
+      form.classList.remove("disabled");
+    }
+  };
+  let formData = new FormData(form);
+  xhr.send(formData);
+};
