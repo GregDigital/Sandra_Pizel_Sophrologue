@@ -72,12 +72,25 @@ footer {
     }
   }
   footer {
+    span{
+      font-size:1.2em;
+    }
     .follow {
       .fa-brands {
         top: 44%;
         translate: (-44% 0);
         right: 20px;
       }
+    }
+    .mention {
+     
+      font-size: 0.7em;
+    
+    }
+    .copyright {
+     
+      font-size: 0.7em;
+     
     }
   }
 }

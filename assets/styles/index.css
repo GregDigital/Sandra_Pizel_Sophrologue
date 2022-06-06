@@ -1194,6 +1194,10 @@ h1 {
   }
 }
 
+.contact {
+  margin-top: 1.5em;
+}
+
 .contact h1 {
   width: 95%;
   margin-left: auto;
@@ -1212,8 +1216,8 @@ h1 {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .contact h2 {
@@ -1229,7 +1233,7 @@ h1 {
   margin-bottom: 0.8em;
 }
 
-.contact p {
+.contact span {
   color: #b6b6b6;
   text-decoration: none;
 }
@@ -1457,10 +1461,19 @@ footer .copyright {
   .content_logo .span_positif {
     margin-left: 0.5em;
   }
+  footer span {
+    font-size: 1.2em;
+  }
   footer .follow .fa-brands {
     top: 44%;
     translate: -44% 0;
     right: 20px;
+  }
+  footer .mention {
+    font-size: 0.7em;
+  }
+  footer .copyright {
+    font-size: 0.7em;
   }
 }
 
