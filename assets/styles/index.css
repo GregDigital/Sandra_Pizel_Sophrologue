@@ -1421,11 +1421,11 @@ footer .span_positif {
 
 footer .follow .fa-brands {
   position: absolute;
-  top: 40%;
+  top: 45%;
   translate: -40% 0;
-  right: 50px;
+  right: 25px;
   color: #ad6c6c;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 footer .mention {
@@ -1435,7 +1435,7 @@ footer .mention {
   position: absolute;
   display: block;
   bottom: 16px;
-  right: 46px;
+  right: 20px;
 }
 
 footer .copyright {
@@ -1445,7 +1445,7 @@ footer .copyright {
   position: absolute;
   display: block;
   bottom: 16px;
-  left: 46px;
+  left: 20px;
 }
 
 @media only screen and (max-width: 480px) {

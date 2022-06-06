@@ -28,11 +28,11 @@ footer {
   .follow {
     .fa-brands {
       position: absolute;
-      top: 40%;
+      top: 45%;
       translate: (-40% 0);
-      right: 50px;
+      right: 25px;
       color: $titlecolor;
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
 
@@ -43,7 +43,7 @@ footer {
     position: absolute;
     display: block;
     bottom: 16px;
-    right: 46px;
+    right: 20px;
   }
   .copyright {
     font-family: $font2;
@@ -52,7 +52,7 @@ footer {
     position: absolute;
     display: block;
     bottom: 16px;
-    left: 46px;
+    left: 20px;
   }
 }
 
