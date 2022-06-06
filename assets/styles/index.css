@@ -567,9 +567,9 @@ h1 {
     width: 100%;
   }
   .together {
+    width: 90% !important;
     height: auto !important;
     margin: 0 auto 0 auto;
-    width: 90%;
   }
   .together .background .paragraphe_desc {
     width: 100%;
@@ -637,6 +637,9 @@ h1 {
     left: 0;
     bottom: -36px;
   }
+  .together {
+    width: 90%;
+  }
   .together .description_container {
     max-width: 80% !important;
   }
@@ -692,7 +695,7 @@ h1 {
 
 .whoAmI .whoContainer div p:after {
   content: "";
-  width: 5rem;
+  width: 15%;
   height: 5px;
   position: absolute;
   background: #ad6c6c;
@@ -835,18 +838,6 @@ h1 {
   bottom: -15px;
 }
 
-/*
-.background::before {
-  content: "";
-  background: #fdeae8;
-  display: block;
-  width: 26rem;
-  height: 11em;
-  position: absolute;
-  border-radius: 2rem;
-  left: 20px;
-}
-*/
 .price {
   position: relative;
   width: 95%;

@@ -219,9 +219,10 @@ h1 {
     }
   }
   .together {
+    width: 90% !important;
     height: auto !important;
     margin: 0 auto 0 auto;
-    width: 90%;
+   
     .background {
       .paragraphe_desc {
         width: 100%;
@@ -292,6 +293,7 @@ h1 {
   }
 
   .together {
+    width: 90%;
     .description_container {
       max-width: 80% !important;
     }

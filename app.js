@@ -43,14 +43,17 @@ for (let i = 0; i < menu.length; i++) {
 let lastScroll = 20;
 let logo = document.querySelector(".hideLogo");
 let h2 = document.querySelector(".hideMenu");
+let header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY < lastScroll) {
     logo.style.visibility = "visible";
     h2.style.visibility = "visible";
+    header.style.height = "auto";
   } else {
     logo.style.visibility = "hidden";
     h2.style.visibility = "hidden";
+    header.style.height = "0";
   }
   // transmet la position quand le scroll est terminé
   return lastScroll;
