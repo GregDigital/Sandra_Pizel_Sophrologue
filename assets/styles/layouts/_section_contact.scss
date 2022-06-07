@@ -85,6 +85,7 @@ textarea {
 }
 
 [type="submit"] {
+  appearance: none;
   border: solid 3px $pinklight;
   border-radius: 3rem;
   background: $pinklight;
@@ -111,6 +112,10 @@ textarea {
   appearance: none;
 }
 
+input {
+  appearance: none;
+}
+
 .button-area {
   span {
     font-size: 1em;
@@ -120,7 +125,7 @@ textarea {
   }
 }
 
-.ios{
+.ios {
   text-decoration: none;
   color: $grey;
 }

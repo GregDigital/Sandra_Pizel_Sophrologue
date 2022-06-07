@@ -1299,6 +1299,9 @@ textarea {
 }
 
 [type="submit"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: solid 3px #fdeae8;
   border-radius: 3rem;
   background: #fdeae8;
@@ -1324,6 +1327,12 @@ textarea {
 input[type="text"],
 textarea {
   outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -1511,5 +1520,11 @@ footer .copyright {
   color: #b6b6b6;
   margin-bottom: 1em;
   line-height: 1.5em;
+}
+
+@media only screen and (max-width: 900px) {
+  .mentions_legales {
+    margin: 3em 1em 5em 1em;
+  }
 }
 /*# sourceMappingURL=index.css.map */
