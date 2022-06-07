@@ -4,6 +4,23 @@
   align-content: stretch;
 
   height: 100vh;
+  .share {
+    z-index: 2;
+    position: fixed;
+    right: 30px;
+    bottom: 50%;
+    span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      display: block;
+      margin-bottom: 1em;
+      color: $pinklight;
+    }
+    .fa-brands {
+      color: $titlecolor;
+      font-size: 1.2em;
+    }
+  }
 }
 
 .container_img {
@@ -167,6 +184,9 @@ h1 {
   }
 }
 @media only screen and (max-width: 900px) {
+  .share {
+    display: none;
+  }
   #frame_top {
     display: none;
   }
@@ -222,7 +242,7 @@ h1 {
     width: 90% !important;
     height: auto !important;
     margin: 0 auto 0 auto;
-   
+
     .background {
       .paragraphe_desc {
         width: 100%;

@@ -58,10 +58,8 @@ ul li a {
 .pulse {
   border: #fdeae8 solid 2px;
   background-color: #fff;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  -webkit-transform: translate(-50%, -50%) scale(2.5);
+          transform: translate(-50%, -50%) scale(2.5);
   cursor: none;
   pointer-events: none;
 }
@@ -296,6 +294,28 @@ nav {
   height: 100vh;
 }
 
+.homepage .share {
+  z-index: 2;
+  position: fixed;
+  right: 30px;
+  bottom: 50%;
+}
+
+.homepage .share span {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  display: block;
+  margin-bottom: 1em;
+  color: #fdeae8;
+}
+
+.homepage .share .fa-brands {
+  color: #ad6c6c;
+  font-size: 1.2em;
+}
+
 .container_img {
   display: -ms-grid;
   display: grid;
@@ -513,6 +533,9 @@ h1 {
 }
 
 @media only screen and (max-width: 900px) {
+  .share {
+    display: none;
+  }
   #frame_top {
     display: none;
   }

@@ -63,8 +63,8 @@ ul li a {
 .pulse {
   border: $pinklight solid 2px;
   background-color: #fff;
-  transform: translate(-50%, -50%);
-  transform: scale(3);
+
+  transform: translate(-50%, -50%) scale(2.5);
   cursor: none;
   pointer-events: none;
 }
